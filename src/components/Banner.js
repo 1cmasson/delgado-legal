@@ -27,7 +27,18 @@ export const Banner = () => {
     }, []);
     
     if(!isDesktop){
-        return
+        return(
+            <div className="bg-primary flex justify-center">
+                <div className="align-items inline-block lg:flex = text-center self-center md:flex-no-wrap px-6 py-2.5">
+                    <div className="text-white flex justify-center hover:text-hover my-1.5">
+                        <PhoneIcon className="h-6 w-6"/>&nbsp;
+                        <a className="text-ellipsis" href="tel:+1 (786) 762-2389">
+                            +1 (786) 762-2389
+                        </a>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return (
