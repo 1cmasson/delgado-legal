@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 export const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-hero bg-cover bg-no-repeat bg-fixed md:h-screen md:bg-desktop">
+    <div className="relative isolate overflow-hidden bg-hero bg-contain md:bg-cover bg-no-repeat bg-fixed md:h-screen md:bg-desktop">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg lg:flex-shrink-0 lg:pt-8">
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <h1 className="mt-10 text-4xl text-center font-bold tracking-tight text-white sm:text-6xl">
             Deploy to the cloud with confidence
           </h1>
           <p className="mt-6 text-lg text-center md:text-left leading-8 text-blue-100">
