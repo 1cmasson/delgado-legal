@@ -31,9 +31,16 @@ export const Banner = () => {
             <div className="bg-primary flex justify-center">
                 <div className="align-items inline-block lg:flex = text-center self-center md:flex-no-wrap px-6 py-2.5">
                     <div className="text-white flex justify-center hover:text-hover my-1.5">
-                        <PhoneIcon className="h-6 w-6"/>&nbsp;
-                        <a className="text-ellipsis" href="tel:+1 (786) 762-2389">
-                            +1 (786) 762-2389
+                        <a href="mailto:michael@delgadolegalpa.com">
+                            <EnvelopeIcon className="h-6 w-6"/>
+                        </a>
+                        <span className="text-white mx-12">|</span>
+                        <a href="tel:+1 (786) 762-2389">
+                            <PhoneIcon className="h-6 w-6"/>
+                        </a>
+                        <span className="text-white mx-12">|</span>
+                        <a href="https://maps.app.goo.gl/aEVBbRF9mQwFji8x6">
+                            <MapPinIcon className="h-6 w-6"/>
                         </a>
                     </div>
                 </div>
