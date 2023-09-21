@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden h-[calc(100dvh) h-screen bg-hero md:bg-desktop bg-cover bg-no-repeat bg-fixed">
+    <div className="relative isolate overflow-hidden h-[calc(100dvh) md:h-screen bg-hero md:bg-desktop bg-cover bg-no-repeat bg-fixed">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg lg:flex-shrink-0 lg:pt-8">
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
