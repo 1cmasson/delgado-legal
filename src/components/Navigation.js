@@ -5,8 +5,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
     { name: 'About Us', href: '/about' },
-    { name: 'Products', href: '/products' },
-    { name: 'Machines', href: '/machines' },
+    { name: 'Services', href: '/services' },
+    { name: 'FAQ', href: '/faq' },
   ]
 
 export const Navigation = () => {
@@ -60,7 +60,7 @@ export const Navigation = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/#contact" className="text-sm bg-primary text-gray-100 rounded  px-4 py-2 font-semibold leading-6 shadow-sm hover:bg-hover  hover:text-gray-800 focus-visible:outline focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-slate-500 focus-visible:bg-hover focus-visible:text-black">
+            <a href="/contact" className="text-sm bg-primary text-gray-100 rounded  px-4 py-2 font-semibold leading-6 shadow-sm hover:bg-hover  hover:text-gray-800 focus-visible:outline focus-visible:outline-offset-0 focus-visible:outline-4 focus-visible:outline-slate-500 focus-visible:bg-hover focus-visible:text-black">
               Contact Us
             </a>
           </div>
