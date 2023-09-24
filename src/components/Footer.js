@@ -57,7 +57,7 @@ const navigation = {
                 </div>
                 <div className="mt-10 md:mt-0">
                   <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
-                  <ul role="list" className="mt-6 space-y-4">
+                  <ul className="mt-6 space-y-4">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
                         <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
