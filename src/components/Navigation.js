@@ -4,8 +4,10 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-    { name: 'About Us', href: '/about' },
+    { name: 'Home', href: '/'},
+    { name: 'Our Firm', href: '/about-our-firm' },
     { name: 'Services', href: '/services' },
+    { name: 'Testimonials', href: '/testimonials'},
     { name: 'FAQ', href: '/faq' },
   ]
 
@@ -105,7 +107,7 @@ export const Navigation = () => {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#contact"
+                    href="/contact"
                     title='Contact Us'
                     className="-mx-3 block "
                   >

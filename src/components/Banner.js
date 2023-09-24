@@ -4,14 +4,14 @@ import { useEffect } from "react"
 
 const items = [
     {
-        link:"tel:+1 (786) 762-2389",
-        text: "+1 (786) 762-2389",
-        icon: <PhoneIcon className="h-6 w-6"/>
-    },
-    {
         link:"mailto:michael@delgadolegalpa.com",
         text: "michael@delgadolegalpa.com",
         icon: <EnvelopeIcon className="h-6 w-6"/>
+    },
+    {
+        link:"tel:+1 (786) 762-2389",
+        text: "+1 (786) 762-2389",
+        icon: <PhoneIcon className="h-6 w-6"/>
     },
     {
         link:"https://maps.app.goo.gl/aEVBbRF9mQwFji8x6",
