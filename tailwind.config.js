@@ -14,7 +14,8 @@ module.exports = {
       },
       textColor: {
         primary:"#8B8B8B",
-        hover:"#E4BE72"
+        hover:"#E4BE72",
+        secondary: "#033A5B"
       },
       backgroundImage:{
         hero: 'linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/mobile-background.webp")',
@@ -22,6 +23,5 @@ module.exports = {
       }
     },
   },
-
   plugins: [require('@tailwindcss/forms')],
 }
