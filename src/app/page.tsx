@@ -10,6 +10,7 @@ import { Testimonials } from "../components/Testimonials";
 import { FAQ } from "../components/FAQ";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import { BackToTop } from "../components/BackToTop"
 
 const App = () => {
     return(
@@ -17,6 +18,7 @@ const App = () => {
             <Banner/>
             <Navigation/>
             <Hero />
+            {/* <BackToTop/> */}
             <Stats/>
             <About/>
             <Practices/>
