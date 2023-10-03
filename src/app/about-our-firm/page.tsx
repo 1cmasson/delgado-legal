@@ -17,40 +17,41 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 const stats = [
-  { label: 'Transactions every 24 hours', value: '44 million' },
-  { label: 'Assets under holding', value: '$119 trillion' },
-  { label: 'New users annually', value: '46,000' },
+  { label: 'Successful Cases Handled', value: '100+' },
+  { label: 'Years Of Legal Excellence', value: 'Over 15' },
+  { label: 'Client Satisfaction Rate', value: '98%' },
 ]
+
 const values = [
   {
-    name: 'Be world-class',
+    name: 'Client-Centric Approach',
     description:
-      'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      'Putting our clients first is the cornerstone of our practice. We prioritize your needs and goals, ensuring that every solution is tailored to your unique situation.',
   },
   {
-    name: 'Share everything you know',
+    name: 'Integrity and Ethics',
     description:
-      'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+      'We uphold the highest ethical standards in our legal practice. Trust, honesty, and transparency are at the core of everything we do.',
   },
   {
-    name: 'Always learning',
+    name: 'Excellence in Advocacy',
     description:
-      'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+      'We strive for excellence in every case. Our team is dedicated to providing top-tier legal representation, no matter the complexity of the matter.',
   },
   {
-    name: 'Be supportive',
+    name: 'Legal Expertise',
     description:
-      'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
+      'With deep knowledge and extensive experience in various practice areas, our attorneys are equipped to tackle the toughest legal challenges.',
   },
   {
-    name: 'Take responsibility',
+    name: 'Personalized Service',
     description:
-      'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
+      "We understand that each client's situation is unique. We provide personalized attention, ensuring that you receive the guidance and support you need.",
   },
   {
-    name: 'Enjoy downtime',
+    name: 'Community Engagement',
     description:
-      'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
+      'We believe in giving back to the community. Our commitment extends beyond the courtroom as we actively engage in community events and initiatives.',
   },
 ]
 const team = [
@@ -84,26 +85,14 @@ const App = () => {
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl">Our mission</h2>
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-              <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p className="text-xl leading-8 text-primary">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-                  eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
-                  Eleifend egestas fringilla sapien.
+            <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
+                <p className="text-lg leading-8 relative mt-6 text-gray-600 sm:max">
+                At DELGADO LEGAL, P.A., our mission is to provide legal support and guidance to our clients and help them navigate complex legal challenges
+                with confidence. We are committed to delivering high quality legal
+                services that prioritize our clients' interests, ensuring their rights are protected, and their goals are achieved. Our
+                mission is not just about practicing law; it's about making a positive impact on the lives of those we serve, one case at a time.
                 </p>
-                <div className="mt-10 max-w-xl text-base leading-7 text-gray-800">
-                  <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed
-                    amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius
-                    sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                    Mattis mauris semper sed amet vitae sed turpis id.
-                  </p>
-                  <p className="mt-10">
-                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie
-                    auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et
-                    ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-                  </p>
                 </div>
-              </div>
               <div className="lg:flex lg:flex-auto lg:justify-center">
                 <dl className="w-64 space-y-8 xl:w-80">
                   {stats.map((stat) => (
@@ -134,8 +123,7 @@ const App = () => {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl">Our Values</h2>
             <p className="mt-6 text-lg leading-8 text-primary">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-              accusamus quisquam.
+            At DELGADO LEGAL, P.A., our values define who we are and how we serve our clients. They represent our commitment, integrity, and client-centric approach.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
