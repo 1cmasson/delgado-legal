@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/open-graph.svg" />
+        <meta property="og:image" content="/open-graph.png" />
         <meta property="og:description" content=" DELGADO LEGAL, P.A. is a full-service law firm and licensed settlement agent that
          provides clients with a variety of legal services, including handling your home purchaseand/or sale." />
       </Head>
