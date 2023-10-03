@@ -22,7 +22,7 @@ export const Contact = () => {
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-secondary mb-10">Contact Us</h2>
-            <iframe title="Google Maps location of Double R Vending" className="rounded-3xl my-9 h-full shadow border-0 block" src="https://www.google.com/maps/embed?z-14&pb=!1m14!1m8!1m3!1d7355176.85781452!2d-80.262153!3d25.823528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0bbadef6bbb%3A0x3dd5242b862d2931!2s25%20E%209th%20Ct%2C%20Hialeah%2C%20FL%2033010!5e0!3m2!1sen!2sus!4v1686945514638!5m2!1sen!2sus" width="300" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            <iframe title="Google Maps location of Double R Vending" className="rounded-3xl my-9 h-full shadow border-0 block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.612193893161!2d-80.30703319999999!3d25.9151162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a530f6acc763%3A0x7ad3a5fdfd291c3f!2s6500%20Cow%20Pen%20Rd%20STE%20304%2C%20Miami%20Lakes%2C%20FL%2033014!5e0!3m2!1sen!2sus!4v1696298588222!5m2!1sen!2sus" width="300" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-800">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -30,9 +30,9 @@ export const Contact = () => {
                   <BuildingOffice2Icon className="h-7 w-6 text-gray-800" aria-hidden="true" />
                 </dt>
                 <dd>
-                  25 E 9th Ct
+                  6500 Cow Pen Rd
                   <br />
-                  Hialeah, FL 33010
+                  Miami Lakes, FL 33014
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -41,8 +41,8 @@ export const Contact = () => {
                   <PhoneIcon className="h-7 w-6 text-gray-800" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-300" href="tel:+1 (305) 710-1818">
-                    +1 (305) 710-1818
+                  <a className="hover:text-gray-300" href="tel:+1 (786) 762-2389">
+                  +1 (786) 762-2389
                   </a>
                 </dd>
               </div>
@@ -52,8 +52,8 @@ export const Contact = () => {
                   <EnvelopeIcon className="h-7 w-6 text-gray-800" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-300" href="mailto:doublervendingco@bellsouth.net">
-                  doublervendingco@bellsouth.net
+                  <a className="hover:text-gray-300" href="mailto:michael@delgadolegalpa.com">
+                    michael@delgadolegalpa.com
                   </a>
                 </dd>
               </div>

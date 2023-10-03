@@ -1,7 +1,7 @@
 const stats = [
   { id: 1, name: 'Experienced Lawyers', value: '50+' },
   { id: 2, name: 'Successful Cases Handled', value: '100+' },
-  { id: 3, name: 'Years Of Legal Excellence', value: 'Over 15' },
+  { id: 3, name: 'Years Of Legal Excellence', value: '15+' },
   { id: 4, name: 'Client Satisfaction Rate', value: '98%' },
 ]
 
