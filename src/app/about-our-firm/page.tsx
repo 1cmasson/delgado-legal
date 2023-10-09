@@ -75,33 +75,31 @@ const App = () => {
       <Header title="Our Firm"/>
 
       <main className="isolate">
-        {/* Hero section */}
-        <div className='my-24'>
-          <About />
-        </div>
-
+        
         {/* Content section */}
-        <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl">Our mission</h2>
-            <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-            <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p className="text-lg leading-8 relative mt-6 text-gray-600 sm:max">
-                At DELGADO LEGAL, P.A., our mission is to provide legal support and guidance to our clients and help them navigate complex legal challenges
-                with confidence. We are committed to delivering high quality legal
-                services that prioritize our clients' interests, ensuring their rights are protected, and their goals are achieved. Our
-                mission is not just about practicing law; it's about making a positive impact on the lives of those we serve, one case at a time.
-                </p>
+        <div className='my-24'>
+          <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+              <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl">Our mission</h2>
+              <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+              <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
+                  <p className="text-lg leading-8 relative mt-6 text-gray-600 sm:max">
+                  At DELGADO LEGAL, P.A., our mission is to provide legal support and guidance to our clients and help them navigate complex legal challenges
+                  with confidence. We are committed to delivering high quality legal
+                  services that prioritize our clients' interests, ensuring their rights are protected, and their goals are achieved. Our
+                  mission is not just about practicing law; it's about making a positive impact on the lives of those we serve, one case at a time.
+                  </p>
+                  </div>
+                <div className="lg:flex lg:flex-auto lg:justify-center">
+                  <dl className="w-64 space-y-8 xl:w-80">
+                    {stats.map((stat) => (
+                      <div key={stat.label} className="flex flex-col-reverse gap-y-4">
+                        <dt className="text-base leading-7 text-primary">{stat.label}</dt>
+                        <dd className="text-5xl font-semibold tracking-tight text-secondary">{stat.value}</dd>
+                      </div>
+                    ))}
+                  </dl>
                 </div>
-              <div className="lg:flex lg:flex-auto lg:justify-center">
-                <dl className="w-64 space-y-8 xl:w-80">
-                  {stats.map((stat) => (
-                    <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                      <dt className="text-base leading-7 text-primary">{stat.label}</dt>
-                      <dd className="text-5xl font-semibold tracking-tight text-secondary">{stat.value}</dd>
-                    </div>
-                  ))}
-                </dl>
               </div>
             </div>
           </div>

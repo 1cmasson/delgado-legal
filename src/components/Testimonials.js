@@ -2,45 +2,45 @@ import Image from 'next/image'
 
 const testimonials = [
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: 'DELGADO LEGAL, P.A. is a treasure trove of legal expertise! Their dedication and passion for all things legal are palpable. If you appreciate fine legal service, look no further. These guys are the epitome of legal brilliance.',
     author: {
-      name: 'Leslie Alexander',
+      name: 'Alex R. (The Legal Aficionado',
       handle: 'lesliealexander',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: 'Kudos to DELGADO LEGAL, P.A. for helping kickstart my business with a solid LLC setup! They were fast, friendly, and full of useful info. Starting a business is exciting, and they made it even more so. Here\'s to smooth beginnings!',
     author: {
-      name: 'Leslie Alexander',
+      name: 'Sophie A. (The Upbeat Entrepreneur',
       handle: 'lesliealexander',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: 'DELGADO LEGAL, P.A. helped us plan for our family\'s future. Their expertise in wills, trusts, and probates is amazing. They really cared about making sure our family is taken care of. If family matters to you, these are the folks to turn to.',
     author: {
-      name: 'Leslie Alexander',
+      name: 'David R. (The Family First)',
       handle: 'lesliealexander',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: 'Selling my home was a breeze with DELGADO LEGAL, P.A. Their understanding of real estate made the journey stress-free. Trustworthy, efficient, and super friendly. If you\'re selling your home, they\'ve got your back!',
     author: {
-      name: 'Leslie Alexander',
+      name: 'Linda M. (The Warm Homebody)',
       handle: 'lesliealexander',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
   {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    body: 'Working with DELGADO LEGAL, P.A. was a game-changer! Their expertise in real estate and commercial law is top-notch. The whole process was seamless and professional. If you\'re serious about your business, these folks are the real deal.',
     author: {
-      name: 'Leslie Alexander',
+      name: 'John D. (The Corporate Pro)',
       handle: 'lesliealexander',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',

@@ -6,18 +6,18 @@ const people = [
       role: 'Attorney/Partner',
       imageUrl:
         '/Micheal.webp',
-      bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-      twitterUrl: '#',
-      linkedinUrl: '#',
+      bio: 'Michael Delgado, a standout attorney at Delgado Legal, P.A., specializes in real estate consumer matters, earning the esteemed title of Rising Star in 2022. With a law degree from St. Thomas University School of Law and admitted to practice since 2008, he provides exceptional legal representation to clients in the Hialeah area.',
+      // twitterUrl: '#',
+      linkedinUrl: 'https://www.linkedin.com/in/michael-delgado-b9728927/',
     },
     {
       name: 'Vanessa Delgado',
       role: 'Attorney/Partner',
       imageUrl:
         '/Vanessa.webp',
-      bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-      twitterUrl: '#',
-      linkedinUrl: '#',
+      bio: 'Vanessa Delgado, a seasoned attorney graduating from Florida International University College of Law in 2008, boasts over 16 years of expertise. Specializing in real estate litigation, transactions, landlord/tenant disputes, and estate planning, Vanessa excels in providing comprehensive legal solutions tailored to her clients\' needs.',
+      // twitterUrl: '#',
+      linkedinUrl: 'https://www.linkedin.com/in/vanessa-delgado-a4b090a/',
     }
   ]
   
@@ -37,19 +37,19 @@ const people = [
           >
             {people.map((person) => (
               <li key={person.name}>
-                <Image width={200} height={200} className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+                <Image width={200} height={200} className="aspect-[3/2] w-full rounded-2xl object-cover object-top" src={person.imageUrl} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 text-secondary">{person.name}</h3>
                 <p className="text-base leading-7 text-gray-600">{person.role}</p>
                 <p className="mt-4 text-base leading-7 text-gray-600">{person.bio}</p>
                 <ul className="mt-6 flex gap-x-6">
-                  <li>
+                  {/* <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">Twitter</span>
                       <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">LinkedIn</span>
