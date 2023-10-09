@@ -26,12 +26,12 @@ export const About = () => {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="about-our-firm"
+                    href="/about-our-firm"
                     className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:text-gray-800 hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
                   >
                     Read More
                   </a>
-                  <a href="contact" className="text-sm font-semibold leading-6 text-gray-900">
+                  <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
                     Contact Us <span aria-hidden="true">→</span>
                   </a>
                 </div>

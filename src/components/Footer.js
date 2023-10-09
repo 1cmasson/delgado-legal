@@ -11,9 +11,12 @@ const navigation = {
     { name: 'FAQs', href: 'faq' },
     { name: 'Contact Us', href: 'contact' },
   ],
-  legal: [
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+  services: [
+    { name: 'Real Estate Closings'},
+    { name: 'Foreclosure Defense'},
+    { name: 'Real Estate Closings'},
+    { name: 'Estate Planning'},
+    { name: 'Uncontested Divorces'}
   ],
 }
 
@@ -61,10 +64,9 @@ export const Footer = () => {
             <div className="mt-10 md:mt-0">
               <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
               <ul className="mt-6 space-y-4">
-                {navigation.legal.map((item) => (
+                {navigation.services.map((item) => (
                   <li key={item.name}>
                     <a
-                      href={item.href}
                       className="text-sm leading-6 text-gray-300 hover:text-white"
                     >
                       {item.name}
