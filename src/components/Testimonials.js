@@ -4,58 +4,48 @@ const testimonials = [
   {
     body: 'DELGADO LEGAL, P.A. is a treasure trove of legal expertise! Their dedication and passion for all things legal are palpable. If you appreciate fine legal service, look no further. These guys are the epitome of legal brilliance.',
     author: {
-      name: 'Alex R. (The Legal Aficionado',
+      name: 'Alex R.',
       handle: 'lesliealexander',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/Alex-R.webp',
     },
   },
   {
     body: 'Kudos to DELGADO LEGAL, P.A. for helping kickstart my business with a solid LLC setup! They were fast, friendly, and full of useful info. Starting a business is exciting, and they made it even more so. Here\'s to smooth beginnings!',
     author: {
-      name: 'Sophie A. (The Upbeat Entrepreneur',
+      name: 'Christina L.',
       handle: 'lesliealexander',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/Christina-Lauren.webp',
     },
   },
   {
     body: 'DELGADO LEGAL, P.A. helped us plan for our family\'s future. Their expertise in wills, trusts, and probates is amazing. They really cared about making sure our family is taken care of. If family matters to you, these are the folks to turn to.',
     author: {
-      name: 'David R. (The Family First)',
+      name: 'David R.',
       handle: 'lesliealexander',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/David-R.webp',
     },
   },
   {
     body: 'Selling my home was a breeze with DELGADO LEGAL, P.A. Their understanding of real estate made the journey stress-free. Trustworthy, efficient, and super friendly. If you\'re selling your home, they\'ve got your back!',
     author: {
-      name: 'Linda M. (The Warm Homebody)',
+      name: 'Linda M.',
       handle: 'lesliealexander',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/Linda-M.webp',
     },
   },
   {
     body: 'Working with DELGADO LEGAL, P.A. was a game-changer! Their expertise in real estate and commercial law is top-notch. The whole process was seamless and professional. If you\'re serious about your business, these folks are the real deal.',
     author: {
-      name: 'John D. (The Corporate Pro)',
+      name: 'John D.',
       handle: 'lesliealexander',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/John-D.webp',
     },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  // More testimonials...
+  }
 ]
 
 export const Testimonials = () => {
@@ -72,9 +62,9 @@ export const Testimonials = () => {
         </div>
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, idx) => (
               <div
-                key={testimonial.author.handle}
+                key={idx}
                 className="pt-8 sm:inline-block sm:w-full sm:px-4"
               >
                 <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
@@ -91,7 +81,7 @@ export const Testimonials = () => {
                     />
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
-                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                      {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}
                     </div>
                   </figcaption>
                 </figure>
