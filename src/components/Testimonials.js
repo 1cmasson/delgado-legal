@@ -2,50 +2,48 @@ import Image from 'next/image'
 
 const testimonials = [
   {
-    body: 'DELGADO LEGAL, P.A. is a treasure trove of legal expertise! Their dedication and passion for all things legal are palpable. If you appreciate fine legal service, look no further. These guys are the epitome of legal brilliance.',
+    body: 'Micheal, you helped big time. I haven’t forgotten about you and what I have these types of sellers will always keep you 1st in line. Thank you kindly.',
     author: {
-      name: 'Alex R.',
-      handle: 'lesliealexander',
-      imageUrl:
-        '/Alex-R.webp',
+      name: 'Brenda A.',
+      role: 'Real Estate Agent'
     },
   },
   {
-    body: 'Kudos to DELGADO LEGAL, P.A. for helping kickstart my business with a solid LLC setup! They were fast, friendly, and full of useful info. Starting a business is exciting, and they made it even more so. Here\'s to smooth beginnings!',
+    body: 'First time I see an attorney bend over backwards for everyone involved in the transaction, I will keep in mind the way you work. Congratulations!',
     author: {
-      name: 'Christina L.',
-      handle: 'lesliealexander',
-      imageUrl:
-        '/Christina-Lauren.webp',
+      name: 'Amada C.',
+      role: 'Realtor',
     },
   },
   {
-    body: 'DELGADO LEGAL, P.A. helped us plan for our family\'s future. Their expertise in wills, trusts, and probates is amazing. They really cared about making sure our family is taken care of. If family matters to you, these are the folks to turn to.',
+    body: 'Thank you for being the BEST partner any realtor can ask for. You are amazing! Your professionalism and hard work is like non other. You remain in full control of the deal at all times. I can’t thank you enough!',
     author: {
-      name: 'David R.',
-      handle: 'lesliealexander',
-      imageUrl:
-        '/David-R.webp',
+      name: 'Estrella P.',
+      role: 'Realtor',
     },
   },
   {
-    body: 'Selling my home was a breeze with DELGADO LEGAL, P.A. Their understanding of real estate made the journey stress-free. Trustworthy, efficient, and super friendly. If you\'re selling your home, they\'ve got your back!',
+    body: 'Micheal… just a quick note to say Thank You for all your support during this process… 5 star service!!!',
     author: {
-      name: 'Linda M.',
-      handle: 'lesliealexander',
-      imageUrl:
-        '/Linda-M.webp',
+      name: 'A.T',
+      role: 'Buyer',
     },
   },
   {
-    body: 'Working with DELGADO LEGAL, P.A. was a game-changer! Their expertise in real estate and commercial law is top-notch. The whole process was seamless and professional. If you\'re serious about your business, these folks are the real deal.',
+    body: 'You are the best!!! Can’t thank you enough for everything!',
     author: {
-      name: 'John D.',
-      handle: 'lesliealexander',
-      imageUrl:
-        '/John-D.webp',
+      name: 'Gretel M.',
+      role: 'Buyer',
     },
-  }
+  },
+  {
+    body: 'You are professional, thorough, and caring! It was great working with you!',
+    author: {
+      name: 'Gretel M.',
+      role: 'Buyer',
+    },
+  },
+  
 ]
 
 export const Testimonials = () => {
@@ -72,13 +70,6 @@ export const Testimonials = () => {
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
-                    <Image
-                      width={200}
-                      height={200}
-                      className="h-10 w-10 rounded-full bg-gray-50"
-                      src={testimonial.author.imageUrl}
-                      alt=""
-                    />
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
                       {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}

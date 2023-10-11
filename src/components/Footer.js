@@ -66,11 +66,11 @@ export const Footer = () => {
               <ul className="mt-6 space-y-4">
                 {navigation.services.map((item) => (
                   <li key={item.name}>
-                    <a
+                    <div
                       className="text-sm leading-6 text-gray-300 hover:text-white"
                     >
                       {item.name}
-                    </a>
+                    </div>
                   </li>
                 ))}
               </ul>
