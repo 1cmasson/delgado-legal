@@ -39,7 +39,21 @@ const testimonials = [
   {
     body: 'You are professional, thorough, and caring! It was great working with you!',
     author: {
-      name: 'Gretel M.',
+      name: 'Aymee F.',
+      role: 'Buyer',
+    },
+  },
+  {
+    body: 'Thank you for making this a quick and painless process. You guys did a great job!',
+    author: {
+      name: 'Carlos R.',
+      role: 'Buyer',
+    },
+  },
+  {
+    body: 'Thank you again for everything. I’m so glad we met years ago and we’ve been able to work together and you were able to help... So diligently… efficiently… professional, just amazing!',
+    author: {
+      name: 'Katie M.',
       role: 'Buyer',
     },
   },
@@ -72,7 +86,7 @@ export const Testimonials = () => {
                   <figcaption className="mt-6 flex items-center gap-x-4">
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
-                      {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}
+                      <div className="text-gray-600">{testimonial.author.role}</div>
                     </div>
                   </figcaption>
                 </figure>

@@ -29,7 +29,7 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <Image width={150} height={150} src="/white-long-logo.svg" alt="Company name" />
-          <div className="mt-16 grid grid-cols-3 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 xl:col-span-2 xl:mt-0">
             <div>
               <h3 className="text-sm font-semibold leading-6 text-white">Firm</h3>
               <ul className="mt-6 space-y-4">
@@ -61,7 +61,7 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="mt-10 md:mt-0">
+            <div className="mt-10 sm:mt-0">
               <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
               <ul className="mt-6 space-y-4">
                 {navigation.services.map((item) => (
