@@ -14,7 +14,7 @@ const navigation = {
   services: [
     { name: 'Real Estate Closings'},
     { name: 'Foreclosure Defense'},
-    { name: 'Real Estate Closings'},
+    { name: 'Commercial Transactions'},
     { name: 'Estate Planning'},
     { name: 'Uncontested Divorces'}
   ],
