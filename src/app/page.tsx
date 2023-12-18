@@ -19,7 +19,7 @@ const App = () => {
             <Navigation/>
             <Hero />
             {/* <BackToTop/> */}
-            <Stats/>
+            {/* <Stats/> */}
             <About/>
             <Practices/>
             <Testimonials/>
