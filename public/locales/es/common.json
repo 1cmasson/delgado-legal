@@ -1,0 +1,546 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "attorneys": "Nuestros Abogados",
+    "practices": "Áreas de Práctica",
+    "testimonials": "Testimonios",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto"
+  },
+  "home": {
+    "metaTitle": "Delgado Legal P.A. | Abogado de Bienes Raíces Miami Lakes, FL",
+    "metaDescription": "DELGADO LEGAL, P.A. es un bufete de abogados de servicio completo y agente de títulos con licencia en Miami Lakes, FL. Cierres de bienes raíces, planificación patrimonial, defensa de ejecución hipotecaria y más.",
+    "hero": {
+      "subtitle": "Soluciones Legales e Inmobiliarias",
+      "title": "Su Socio de Confianza para Soluciones Legales e Inmobiliarias",
+      "description": "DELGADO LEGAL, P.A. es un bufete de abogados de servicio completo y agente de títulos con licencia que ofrece cierres de bienes raíces expertos, planificación patrimonial y una variedad de servicios legales en todo el sur de Florida.",
+      "ctaPrimary": "Contáctenos",
+      "ctaSecondary": "Nuestros Servicios"
+    },
+    "practices": {
+      "subtitle": "Nuestros Servicios",
+      "title": "Áreas de Práctica",
+      "description": "Ofrecemos representación legal experta en múltiples áreas de práctica para satisfacer sus diversas necesidades.",
+      "viewAll": "Ver Todas las Áreas de Práctica",
+      "areas": {
+        "realEstate": {
+          "title": "Cierres de Bienes Raíces",
+          "description": "Transacciones inmobiliarias fluidas de principio a fin. Servicios de agente de títulos con licencia para compradores, vendedores y agentes."
+        },
+        "foreclosure": {
+          "title": "Defensa de Ejecución Hipotecaria",
+          "description": "Protegiendo su hogar y futuro financiero con representación legal experimentada."
+        },
+        "commercial": {
+          "title": "Transacciones Comerciales",
+          "description": "Navegue acuerdos comerciales complejos con confianza. Orientación experta para asuntos de propiedades comerciales."
+        },
+        "estate": {
+          "title": "Planificación Patrimonial",
+          "description": "Asegure el futuro de su familia con testamentos, fideicomisos y servicios integrales de planificación patrimonial."
+        }
+      }
+    },
+    "about": {
+      "subtitle": "Sobre Nosotros",
+      "title": "Su Socio Legal de Confianza",
+      "description1": "En DELGADO LEGAL, P.A., creemos en celebrar las victorias de nuestros clientes. Cada historia de éxito es prueba de la confianza que nuestros clientes depositan en nosotros.",
+      "description2": "No somos solo abogados; somos socios en su historia de éxito. Ya sea que esté comprando su primera casa, planificando el futuro de su familia o navegando una transacción compleja, brindamos atención personalizada y comunicación clara durante todo su caso.",
+      "cta": "Sobre Nuestra Firma"
+    },
+    "testimonials": {
+      "subtitle": "Testimonios",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "viewAll": "Leer Más Testimonios"
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Contáctenos hoy para discutir su transacción inmobiliaria o asunto legal.",
+      "button": "Contáctenos Hoy"
+    }
+  },
+  "about": {
+    "metaTitle": "Sobre Nuestra Firma | Delgado Legal P.A.",
+    "metaDescription": "Conozca a DELGADO LEGAL, P.A. - un bufete de abogados de servicio completo en Miami Lakes, FL. Conozca a nuestros abogados Michael y Vanessa Delgado.",
+    "hero": {
+      "subtitle": "Sobre Nosotros",
+      "title": "Celebrando las Victorias de Nuestros Clientes",
+      "description": "Cada éxito es prueba de la confianza que nuestros clientes depositan en nosotros. No somos solo abogados; somos socios en su historia de éxito."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description1": "En DELGADO LEGAL, P.A., nuestra misión es proporcionar apoyo y orientación legal a nuestros clientes y ayudarlos a navegar desafíos legales complejos con confianza.",
+      "description2": "Estamos comprometidos a brindar servicios legales de alta calidad que prioricen los intereses de nuestros clientes, asegurando que sus derechos estén protegidos y sus metas se cumplan. Nuestra misión no se trata solo de practicar la ley; se trata de hacer un impacto positivo en las vidas de aquellos a quienes servimos, un caso a la vez."
+    },
+    "stats": {
+      "cases": "Casos Exitosos Manejados",
+      "years": "Años de Excelencia Legal",
+      "practiceAreas": "Áreas de Práctica"
+    },
+    "values": {
+      "subtitle": "Lo Que Representamos",
+      "title": "Nuestros Valores Fundamentales",
+      "items": {
+        "clientCentric": {
+          "title": "Centrado en el Cliente",
+          "description": "Poner a nuestros clientes primero es la piedra angular de nuestra práctica. Priorizamos sus necesidades y metas, asegurando soluciones personalizadas."
+        },
+        "integrity": {
+          "title": "Integridad",
+          "description": "Mantenemos los más altos estándares éticos. La confianza, la honestidad y la transparencia están en el centro de todo lo que hacemos."
+        },
+        "excellence": {
+          "title": "Excelencia",
+          "description": "Nos esforzamos por la excelencia en cada caso, brindando representación legal de primer nivel sin importar la complejidad."
+        },
+        "expertise": {
+          "title": "Experiencia",
+          "description": "Con profundo conocimiento y amplia experiencia en varias áreas de práctica, abordamos los desafíos legales más difíciles."
+        },
+        "personalized": {
+          "title": "Personalizado",
+          "description": "Entendemos que la situación de cada cliente es única. Brindamos la atención personalizada y orientación que necesita."
+        },
+        "community": {
+          "title": "Comunidad",
+          "description": "Creemos en retribuir. Nuestro compromiso se extiende más allá de la sala del tribunal a través del compromiso comunitario."
+        }
+      }
+    },
+    "team": {
+      "subtitle": "Conozca al Equipo",
+      "title": "Nuestros Abogados",
+      "description": "Nuestro equipo reúne experiencia diversa y un compromiso compartido con el éxito del cliente. Conozca a los abogados Michael y Vanessa Delgado.",
+      "cta": "Conozca a Nuestros Abogados"
+    }
+  },
+  "attorneys": {
+    "metaTitle": "Nuestros Abogados | Delgado Legal P.A.",
+    "metaDescription": "Conozca a los abogados Michael y Vanessa Delgado - profesionales legales experimentados especializados en derecho inmobiliario, planificación patrimonial y más en Delgado Legal P.A.",
+    "hero": {
+      "subtitle": "Conozca a Nuestro Equipo",
+      "title": "Nuestros Abogados",
+      "description": "Profesionales legales experimentados dedicados a proteger sus intereses y lograr los mejores resultados posibles para su caso."
+    },
+    "labels": {
+      "education": "Educación",
+      "experience": "Experiencia",
+      "years": "Años",
+      "linkedIn": "Perfil de LinkedIn"
+    },
+    "vanessa": {
+      "name": "Vanessa Delgado",
+      "role": "Abogada / Socia",
+      "bio": "Con más de 16 años de práctica legal dedicada, Vanessa Delgado aporta experiencia integral a cada compromiso con el cliente. Su profundo conocimiento en litigios y transacciones inmobiliarias, combinado con su competencia en planificación patrimonial, le permite proporcionar soluciones legales personalizadas que abordan todo el espectro de las necesidades de sus clientes.",
+      "specializations": {
+        "realEstateLitigation": "Litigio Inmobiliario",
+        "realEstateTransactions": "Transacciones Inmobiliarias",
+        "landlordTenant": "Disputas Propietario/Inquilino",
+        "estatePlanning": "Planificación Patrimonial"
+      }
+    },
+    "michael": {
+      "name": "Michael Delgado",
+      "role": "Abogado / Socio",
+      "bio": "Michael Delgado se ha establecido como un abogado distinguido en asuntos de consumidores inmobiliarios, ganando reconocimiento como Rising Star en 2022. Su compromiso con la representación excepcional del cliente y su profundo entendimiento de la ley inmobiliaria lo convierten en un defensor de confianza para clientes en toda el área de Hialeah y el gran Miami.",
+      "specializations": {
+        "realEstateConsumer": "Asuntos de Consumidores Inmobiliarios"
+      }
+    },
+    "together": {
+      "subtitle": "Una Asociación Construida sobre la Excelencia",
+      "title": "Delgado Legal, P.A.",
+      "description1": "Desde la fundación de Delgado Legal, P.A. en 2014, Michael y Vanessa Delgado han construido una práctica arraigada en la defensa del cliente y la excelencia legal. Su experiencia combinada abarca derecho inmobiliario, litigios y planificación patrimonial, ofreciendo soluciones legales integrales a individuos y familias en todo el sur de Florida.",
+      "description2": "Juntos, aportan más de tres décadas de experiencia legal combinada, un compromiso compartido con el servicio excepcional y una profunda comprensión de los desafíos que enfrentan sus clientes.",
+      "cta": "Programe una Consulta"
+    }
+  },
+  "practices": {
+    "metaTitle": "Áreas de Práctica | Delgado Legal P.A. - Derecho Inmobiliario Miami",
+    "metaDescription": "Nuestras áreas de práctica: Cierres de Bienes Raíces, Defensa de Ejecución Hipotecaria, Transacciones Comerciales, Planificación Patrimonial y Divorcios No Contestados. Sirviendo al Sur de Florida.",
+    "hero": {
+      "subtitle": "Nuestros Servicios",
+      "title": "Áreas de Práctica",
+      "description": "Desde transacciones inmobiliarias hasta planificación patrimonial, ofrecemos experiencia legal de servicio completo adaptada a sus necesidades."
+    },
+    "servicesInclude": "Los Servicios Incluyen:",
+    "scheduleCta": "Programar Consulta",
+    "areas": {
+      "realEstate": {
+        "title": "Cierres de Bienes Raíces",
+        "description": "Transacciones inmobiliarias fluidas de principio a fin. Como agente de títulos con licencia, manejamos todos los aspectos de su cierre residencial con experiencia y atención al detalle.",
+        "services": {
+          "residential": "Cierres Residenciales",
+          "titleSearch": "Búsqueda de Título y Seguro",
+          "contracts": "Contratos de Compra y Venta",
+          "settlement": "Servicios de Liquidación",
+          "refinancing": "Refinanciamiento",
+          "fsbo": "Venta por Propietario (FSBO)"
+        }
+      },
+      "foreclosure": {
+        "title": "Defensa de Ejecución Hipotecaria",
+        "description": "Protegiendo su hogar y futuro financiero. Proporcionamos representación legal experimentada para ayudarlo a explorar todas las opciones disponibles.",
+        "services": {
+          "loanMod": "Asistencia de Modificación de Préstamo",
+          "litigation": "Litigio de Ejecución Hipotecaria",
+          "shortSale": "Negociaciones de Venta Corta",
+          "deedInLieu": "Opciones de Escritura en Lugar",
+          "lossMitigation": "Mitigación de Pérdidas",
+          "bankruptcy": "Alternativas de Bancarrota"
+        }
+      },
+      "commercial": {
+        "title": "Transacciones Comerciales",
+        "description": "Navegue acuerdos comerciales complejos con confianza. Nuestro equipo proporciona orientación experta para asuntos de propiedades comerciales y transacciones de negocios.",
+        "services": {
+          "closings": "Cierres de Propiedades Comerciales",
+          "lease": "Negociaciones de Arrendamiento",
+          "asset": "Compras de Activos Comerciales",
+          "dueDiligence": "Revisión de Diligencia Debida",
+          "contracts": "Redacción de Contratos",
+          "title": "Servicios de Título"
+        }
+      },
+      "estate": {
+        "title": "Planificación Patrimonial",
+        "description": "Asegure el futuro de su familia con servicios integrales de planificación patrimonial adaptados a su situación y metas únicas.",
+        "services": {
+          "wills": "Testamentos y Fideicomisos",
+          "poa": "Poder Notarial",
+          "healthcare": "Directivas de Atención Médica",
+          "probate": "Asistencia de Sucesión",
+          "assetProtection": "Protección de Activos",
+          "administration": "Administración de Patrimonio"
+        }
+      },
+      "divorce": {
+        "title": "Divorcios No Contestados",
+        "description": "Transiciones familiares simples y eficientes. Ayudamos a parejas que han llegado a un acuerdo a navegar el proceso de divorcio sin problemas.",
+        "services": {
+          "filing": "Presentación de Divorcio No Contestado",
+          "settlement": "Acuerdos de Liquidación",
+          "property": "Documentos de División de Propiedad",
+          "parenting": "Planes de Crianza",
+          "nameChange": "Cambios de Nombre",
+          "judgment": "Preparación de Sentencia Final"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Contáctenos hoy para discutir su transacción inmobiliaria o asunto legal.",
+      "button": "Contáctenos"
+    }
+  },
+  "faq": {
+    "metaTitle": "Preguntas Frecuentes | Delgado Legal P.A. - Preguntas sobre Cierres de Bienes Raíces",
+    "metaDescription": "Preguntas frecuentes sobre cierres de bienes raíces, planificación patrimonial y nuestros servicios legales en Delgado Legal P.A. en Miami Lakes, FL.",
+    "hero": {
+      "subtitle": "Recursos",
+      "title": "Preguntas Frecuentes",
+      "description": "Encuentre respuestas a preguntas comunes sobre nuestros servicios y el proceso legal."
+    },
+    "categories": {
+      "realEstate": {
+        "title": "Cierres de Bienes Raíces",
+        "questions": {
+          "whatIsClosing": {
+            "question": "¿Qué es un cierre de bienes raíces?",
+            "answer": "Un cierre de bienes raíces es el paso final en una transacción de propiedad donde la propiedad se transfiere oficialmente del vendedor al comprador. Como su agente de títulos, coordinamos a todas las partes, aseguramos que los documentos se ejecuten correctamente, se distribuyan los fondos y se registre el título."
+          },
+          "howLong": {
+            "question": "¿Cuánto tiempo toma un cierre típico?",
+            "answer": "La mayoría de los cierres residenciales toman de 30 a 45 días desde el contrato hasta el cierre. Sin embargo, las transacciones en efectivo pueden cerrar mucho más rápido. Trabajamos eficientemente para cumplir con su cronograma mientras aseguramos que todos los detalles se manejen correctamente."
+          },
+          "whatToBring": {
+            "question": "¿Qué necesito traer al cierre?",
+            "answer": "Traiga una identificación con foto válida emitida por el gobierno (licencia de conducir o pasaporte). Si es el comprador, también necesitará un cheque de caja o transferencia bancaria para los costos de cierre. Le proporcionaremos una declaración de cierre detallada de antemano para que conozca el monto exacto."
+          },
+          "mobileClosings": {
+            "question": "¿Ofrecen cierres móviles?",
+            "answer": "Sí, podemos organizar cierres móviles en un lugar conveniente para usted, ya sea su hogar, oficina o la propiedad que se está comprando. Contáctenos para discutir los arreglos."
+          }
+        }
+      },
+      "realtors": {
+        "title": "Trabajando con Agentes de Bienes Raíces",
+        "questions": {
+          "howWork": {
+            "question": "¿Cómo trabajan con agentes de bienes raíces?",
+            "answer": "Nos asociamos estrechamente con agentes de bienes raíces para asegurar transacciones fluidas. Proporcionamos actualizaciones regulares, respuesta rápida en documentos y mantenemos control total del acuerdo desde el contrato hasta el cierre. Muchos agentes nos consideran su socio de cierre preferido."
+          },
+          "complexTransactions": {
+            "question": "¿Pueden manejar transacciones difíciles o complejas?",
+            "answer": "Absolutamente. Tenemos experiencia con una variedad de situaciones complejas incluyendo ventas cortas, compras de ejecución hipotecaria, ventas de patrimonio y transacciones con problemas de título. Trabajamos para encontrar soluciones y mantener los acuerdos en marcha."
+          }
+        }
+      },
+      "estatePlanning": {
+        "title": "Planificación Patrimonial",
+        "questions": {
+          "whyWill": {
+            "question": "¿Por qué necesito un testamento?",
+            "answer": "Un testamento asegura que sus activos se distribuyan de acuerdo con sus deseos y puede nombrar tutores para hijos menores. Sin un testamento, la ley estatal determina cómo se divide su propiedad, lo cual puede no alinearse con sus preferencias."
+          },
+          "willVsTrust": {
+            "question": "¿Cuál es la diferencia entre un testamento y un fideicomiso?",
+            "answer": "Un testamento pasa por el tribunal de sucesiones después de la muerte, mientras que un fideicomiso puede transferir activos inmediatamente sin intervención del tribunal. Los fideicomisos ofrecen más privacidad y pueden ser útiles para patrimonios complejos. Podemos ayudar a determinar cuál es adecuado para su situación."
+          }
+        }
+      },
+      "general": {
+        "title": "Preguntas Generales",
+        "questions": {
+          "schedule": {
+            "question": "¿Cómo programo una cita?",
+            "answer": "Puede contactarnos por teléfono al (786) 762-2389, por correo electrónico a michael@delgadolegalpa.com, o usar el formulario de contacto en nuestro sitio web. Normalmente respondemos dentro de 24 horas."
+          },
+          "areas": {
+            "question": "¿Qué áreas atienden?",
+            "answer": "Atendemos a clientes en todo el sur de Florida, con nuestra oficina ubicada en Miami Lakes, FL. Manejamos cierres en los condados de Miami-Dade, Broward y Palm Beach."
+          },
+          "fees": {
+            "question": "¿Cuáles son sus honorarios?",
+            "answer": "Nuestros honorarios varían según el tipo de transacción y su complejidad. Proporcionamos precios transparentes por adelantado sin cargos ocultos. Contáctenos para una cotización específica para sus necesidades."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Todavía Tiene Preguntas?",
+      "description": "Nuestro equipo está aquí para ayudar. Contáctenos para respuestas personalizadas a sus preguntas legales.",
+      "button": "Contáctenos"
+    }
+  },
+  "testimonials": {
+    "metaTitle": "Testimonios de Clientes | Delgado Legal P.A.",
+    "metaDescription": "Lea lo que dicen nuestros clientes sobre trabajar con Delgado Legal P.A. Testimonios reales de agentes de bienes raíces y compradores de viviendas en el sur de Florida.",
+    "hero": {
+      "subtitle": "Historias de Clientes",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "description": "Escuche a los agentes de bienes raíces, compradores y clientes con los que hemos tenido el privilegio de trabajar en todo el sur de Florida."
+    },
+    "roles": {
+      "realtor": "Agente de Bienes Raíces",
+      "realEstateAgent": "Agente Inmobiliario",
+      "buyer": "Comprador"
+    },
+    "cta": {
+      "title": "¿Listo para Trabajar con Nosotros?",
+      "description": "Permítanos ayudar a que su transacción inmobiliaria sea fluida y sin estrés.",
+      "button": "Contáctenos Hoy"
+    },
+    "items": [
+      {
+        "quote": "¡Gracias por ser el MEJOR socio que cualquier agente de bienes raíces puede pedir! ¡Eres increíble! Tu profesionalismo y trabajo duro no tiene igual. Mantienes el control total del negocio en todo momento. ¡No puedo agradecerte lo suficiente!",
+        "author": "Estrella P.",
+        "roleKey": "testimonials.roles.realtor",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-1.webp"
+      },
+      {
+        "quote": "Primera vez que veo a un abogado desvivirse por todos los involucrados en la transacción. Tendré en cuenta la forma en que trabajas. ¡Felicitaciones!",
+        "author": "Amada C.",
+        "roleKey": "testimonials.roles.realtor",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-3.webp"
+      },
+      {
+        "quote": "Michael, ayudaste muchísimo. No me he olvidado de ti y cuando tenga este tipo de vendedores siempre te tendré en primer lugar. Muchas gracias.",
+        "author": "Brenda A.",
+        "roleKey": "testimonials.roles.realEstateAgent",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-4.webp"
+      },
+      {
+        "quote": "Solo una nota rápida para decir Gracias por todo tu apoyo durante este proceso… ¡¡¡Servicio de 5 estrellas!!!",
+        "author": "A.T.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-2.webp"
+      },
+      {
+        "quote": "¡¡¡Eres el mejor!!! ¡No puedo agradecerte lo suficiente por todo!",
+        "author": "Gretel M.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-5.webp"
+      },
+      {
+        "quote": "¡Eres profesional, minucioso y atento! ¡Fue genial trabajar contigo!",
+        "author": "Aymee F.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-1.webp"
+      },
+      {
+        "quote": "Gracias por hacer de este un proceso rápido y sin complicaciones. ¡Hicieron un gran trabajo!",
+        "author": "Carlos R.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-2.webp"
+      },
+      {
+        "quote": "Gracias de nuevo por todo. Estoy muy contenta de habernos conocido hace años y haber podido trabajar juntos. Tan diligente… eficiente… profesional, ¡simplemente increíble!",
+        "author": "Katie M.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-3.webp"
+      }
+    ]
+  },
+  "contact": {
+    "metaTitle": "Contáctenos | Delgado Legal P.A. - Miami Lakes, FL",
+    "metaDescription": "Contacte a DELGADO LEGAL, P.A. en Miami Lakes, FL. Llame al (786) 762-2389 o envíe un correo a michael@delgadolegalpa.com para cierres de bienes raíces y servicios legales.",
+    "hero": {
+      "subtitle": "Póngase en Contacto",
+      "title": "Contáctenos",
+      "description": "¿Listo para discutir su cierre de bienes raíces o asunto legal? Contáctenos hoy."
+    },
+    "form": {
+      "title": "Envíenos un Mensaje",
+      "subtitle": "Complete el formulario a continuación y le responderemos dentro de 24 horas.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "serviceType": "Tipo de Servicio",
+      "selectService": "Seleccione un servicio...",
+      "message": "Su Mensaje",
+      "messagePlaceholder": "Por favor describa su situación...",
+      "submit": "Enviar Mensaje",
+      "required": "*",
+      "disclaimer": "Al enviar este formulario, acepta nuestra política de privacidad. Su información se mantiene confidencial.",
+      "services": {
+        "realEstate": "Cierre de Bienes Raíces",
+        "foreclosure": "Defensa de Ejecución Hipotecaria",
+        "commercial": "Transacción Comercial",
+        "estate": "Planificación Patrimonial",
+        "divorce": "Divorcio No Contestado",
+        "other": "Otro"
+      }
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "location": "Ubicación",
+      "locationValue": "6500 Cow Pen Rd STE 304,\nMiami Lakes, FL\n33014",
+      "hours": "Horario de Oficina",
+      "hoursValue": "Lun-Vie: 9AM - 6PM\nSáb: Con Cita"
+    }
+  },
+  "common": {
+    "learnMore": "Más Información",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todo",
+    "back": "Volver",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "skipToContent": "Saltar al contenido principal",
+    "openMenu": "Abrir menú"
+  },
+  "footer": {
+    "tagline": "Dedicados a proporcionar servicios legales excepcionales con integridad, compasión y compromiso con nuestros clientes.",
+    "services": "Áreas de Práctica",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyright": "© {year} Delgado Legal. Todos los derechos reservados."
+  },
+  "privacy": {
+    "hero": {
+      "subtitle": "Legal",
+      "title": "Política de Privacidad",
+      "description": "Su privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos su información."
+    },
+    "sections": {
+      "collection": {
+        "title": "Información que Recopilamos",
+        "content": "Cuando utiliza nuestro formulario de contacto, recopilamos la información que proporciona, incluyendo su nombre, dirección de correo electrónico, número de teléfono (si lo proporciona) y el contenido de su mensaje. No recopilamos información automáticamente más allá de los registros estándar del servidor."
+      },
+      "use": {
+        "title": "Cómo Usamos Su Información",
+        "content": "Utilizamos la información que proporciona únicamente para responder a sus consultas y comunicarnos con usted sobre nuestros servicios legales. No utilizamos su información con fines de marketing a menos que usted consienta explícitamente."
+      },
+      "protection": {
+        "title": "Cómo Protegemos Su Información",
+        "content": "Implementamos medidas de seguridad apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Su información se almacena de forma segura y solo el personal autorizado tiene acceso a ella."
+      },
+      "sharing": {
+        "title": "Compartir Información",
+        "content": "No vendemos, intercambiamos ni transferimos de otra manera su información personal a terceros. Solo podemos compartir información cuando lo exija la ley o para proteger nuestros derechos."
+      },
+      "cookies": {
+        "title": "Cookies y Seguimiento",
+        "content": "Nuestro sitio web puede utilizar cookies esenciales para garantizar su correcto funcionamiento. No utilizamos cookies con fines publicitarios o de seguimiento."
+      },
+      "rights": {
+        "title": "Sus Derechos",
+        "content": "Usted tiene derecho a solicitar acceso, corrección o eliminación de su información personal. Para ejercer estos derechos, contáctenos utilizando la información proporcionada a continuación."
+      },
+      "changes": {
+        "title": "Cambios a Esta Política",
+        "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio se publicará en esta página con una fecha de vigencia actualizada."
+      },
+      "contact": {
+        "title": "Contáctenos",
+        "content": "Si tiene preguntas sobre esta Política de Privacidad o desea ejercer sus derechos de privacidad, contáctenos en michael@delgadolegalpa.com o llame al (786) 762-2389."
+      }
+    },
+    "lastUpdated": "Última actualización: Febrero 2026"
+  },
+  "terms": {
+    "hero": {
+      "subtitle": "Legal",
+      "title": "Términos de Servicio",
+      "description": "Por favor lea estos términos cuidadosamente antes de usar nuestro sitio web."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Aceptación de Términos",
+        "content": "Al acceder y utilizar el sitio web de Delgado Legal, P.A., usted acepta y acuerda estar sujeto a estos Términos de Servicio. Si no está de acuerdo con estos términos, por favor no utilice nuestro sitio web."
+      },
+      "services": {
+        "title": "Descripción de Servicios",
+        "content": "Este sitio web proporciona información general sobre Delgado Legal, P.A. y nuestros servicios legales. El sitio web incluye un formulario de contacto que le permite enviar consultas a nuestra firma."
+      },
+      "noAttorneyClient": {
+        "title": "Sin Relación Abogado-Cliente",
+        "content": "El uso de este sitio web o el envío de un formulario de contacto no crea una relación abogado-cliente. Una relación abogado-cliente solo se establece mediante una carta de compromiso firmada. La información enviada a través del formulario de contacto no es confidencial hasta que se establezca una relación abogado-cliente."
+      },
+      "intellectualProperty": {
+        "title": "Propiedad Intelectual",
+        "content": "Todo el contenido de este sitio web, incluyendo texto, gráficos, logotipos e imágenes, es propiedad de Delgado Legal, P.A. y está protegido por las leyes de derechos de autor y marcas registradas. No puede reproducir, distribuir ni usar ningún contenido sin nuestro permiso por escrito."
+      },
+      "userConduct": {
+        "title": "Conducta del Usuario",
+        "content": "Usted acepta utilizar este sitio web solo para fines legales. No puede usar el sitio web de ninguna manera que pueda dañar, deshabilitar o perjudicar el sitio web o interferir con el uso del sitio web por parte de cualquier otra persona."
+      },
+      "disclaimer": {
+        "title": "Descargo de Responsabilidad",
+        "content": "La información en este sitio web se proporciona solo con fines informativos generales y no constituye asesoramiento legal. No debe actuar ni confiar en ninguna información de este sitio web sin buscar el consejo de un abogado con licencia."
+      },
+      "limitation": {
+        "title": "Limitación de Responsabilidad",
+        "content": "Delgado Legal, P.A. no será responsable de ningún daño que surja de su uso de este sitio web o de cualquier información proporcionada en este sitio web. Esto incluye daños directos, indirectos, incidentales, consecuentes o punitivos."
+      },
+      "governing": {
+        "title": "Ley Aplicable",
+        "content": "Estos Términos de Servicio se rigen e interpretan de acuerdo con las leyes del Estado de Florida, sin tener en cuenta sus disposiciones sobre conflictos de leyes."
+      },
+      "changes": {
+        "title": "Cambios a los Términos",
+        "content": "Nos reservamos el derecho de modificar estos Términos de Servicio en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Su uso continuado del sitio web constituye la aceptación de los términos modificados."
+      },
+      "contact": {
+        "title": "Contáctenos",
+        "content": "Si tiene preguntas sobre estos Términos de Servicio, contáctenos en michael@delgadolegalpa.com o llame al (786) 762-2389."
+      }
+    },
+    "lastUpdated": "Última actualización: Febrero 2026"
+  }
+}

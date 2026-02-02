@@ -1,0 +1,555 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* Delgado Legal Brand Colors */
+  --brand-navy: #033A5B;
+  --brand-gold: #E4BE72;
+  --brand-gray: #8B8B8B;
+  
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.35 0.02 240); /* Navy-tinted dark */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.35 0.02 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.35 0.02 240);
+  --primary: oklch(0.30 0.05 240); /* Navy blue #033A5B */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.30 0.05 240);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.60 0 0); /* Gray #8B8B8B */
+  --accent: oklch(0.80 0.10 80); /* Gold #E4BE72 */
+  --accent-foreground: oklch(0.30 0.05 240);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.80 0.10 80); /* Gold for focus ring */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.30 0.05 240); /* Navy */
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.80 0.10 80); /* Gold */
+  --sidebar-primary-foreground: oklch(0.30 0.05 240);
+  --sidebar-accent: oklch(0.35 0.04 240);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.40 0.04 240);
+  --sidebar-ring: oklch(0.80 0.10 80);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+  /* Larger paragraph text on mobile for better readability */
+  @media (max-width: 767px) {
+    p {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+/* Decorative element animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-slow {
+    animation: none;
+  }
+}
+
+/* ============================================
+   Particle Effects - Pure CSS Animations
+   ============================================ */
+
+/* Shared particles container */
+.particles-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 50;
+}
+
+/* Snow particles */
+@keyframes snow-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+.snowflake {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  animation: snow-fall linear infinite;
+}
+
+/* 25 snowflake variants with different positions, sizes, and timing */
+.snowflake-0 { left: 2%; width: 4px; height: 4px; opacity: 0.8; animation-duration: 8s; animation-delay: 0s; }
+.snowflake-1 { left: 6%; width: 3px; height: 3px; opacity: 0.6; animation-duration: 10s; animation-delay: -2s; }
+.snowflake-2 { left: 10%; width: 5px; height: 5px; opacity: 0.9; animation-duration: 7s; animation-delay: -4s; }
+.snowflake-3 { left: 14%; width: 3px; height: 3px; opacity: 0.5; animation-duration: 11s; animation-delay: -1s; }
+.snowflake-4 { left: 18%; width: 4px; height: 4px; opacity: 0.7; animation-duration: 9s; animation-delay: -6s; }
+.snowflake-5 { left: 22%; width: 6px; height: 6px; opacity: 0.8; animation-duration: 8s; animation-delay: -3s; }
+.snowflake-6 { left: 26%; width: 3px; height: 3px; opacity: 0.6; animation-duration: 12s; animation-delay: -5s; }
+.snowflake-7 { left: 30%; width: 4px; height: 4px; opacity: 0.7; animation-duration: 9s; animation-delay: -7s; }
+.snowflake-8 { left: 34%; width: 5px; height: 5px; opacity: 0.9; animation-duration: 7s; animation-delay: -2s; }
+.snowflake-9 { left: 38%; width: 3px; height: 3px; opacity: 0.5; animation-duration: 10s; animation-delay: -4s; }
+.snowflake-10 { left: 42%; width: 4px; height: 4px; opacity: 0.8; animation-duration: 8s; animation-delay: -6s; }
+.snowflake-11 { left: 46%; width: 6px; height: 6px; opacity: 0.7; animation-duration: 11s; animation-delay: -1s; }
+.snowflake-12 { left: 50%; width: 3px; height: 3px; opacity: 0.6; animation-duration: 9s; animation-delay: -3s; }
+.snowflake-13 { left: 54%; width: 5px; height: 5px; opacity: 0.9; animation-duration: 7s; animation-delay: -5s; }
+.snowflake-14 { left: 58%; width: 4px; height: 4px; opacity: 0.5; animation-duration: 10s; animation-delay: -7s; }
+.snowflake-15 { left: 62%; width: 3px; height: 3px; opacity: 0.8; animation-duration: 8s; animation-delay: -2s; }
+.snowflake-16 { left: 66%; width: 6px; height: 6px; opacity: 0.7; animation-duration: 12s; animation-delay: -4s; }
+.snowflake-17 { left: 70%; width: 4px; height: 4px; opacity: 0.6; animation-duration: 9s; animation-delay: -6s; }
+.snowflake-18 { left: 74%; width: 5px; height: 5px; opacity: 0.9; animation-duration: 7s; animation-delay: -1s; }
+.snowflake-19 { left: 78%; width: 3px; height: 3px; opacity: 0.5; animation-duration: 11s; animation-delay: -3s; }
+.snowflake-20 { left: 82%; width: 4px; height: 4px; opacity: 0.8; animation-duration: 8s; animation-delay: -5s; }
+.snowflake-21 { left: 86%; width: 6px; height: 6px; opacity: 0.7; animation-duration: 10s; animation-delay: -7s; }
+.snowflake-22 { left: 90%; width: 3px; height: 3px; opacity: 0.6; animation-duration: 9s; animation-delay: -2s; }
+.snowflake-23 { left: 94%; width: 5px; height: 5px; opacity: 0.9; animation-duration: 7s; animation-delay: -4s; }
+.snowflake-24 { left: 98%; width: 4px; height: 4px; opacity: 0.5; animation-duration: 12s; animation-delay: -6s; }
+
+/* Hearts particles */
+@keyframes heart-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(30px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.heart-particle {
+  position: absolute;
+  color: #ec4899;
+  animation: heart-fall linear infinite;
+}
+
+/* 25 heart variants */
+.heart-0 { left: 3%; font-size: 14px; opacity: 0.6; animation-duration: 12s; animation-delay: 0s; }
+.heart-1 { left: 7%; font-size: 18px; opacity: 0.5; animation-duration: 14s; animation-delay: -3s; }
+.heart-2 { left: 11%; font-size: 12px; opacity: 0.7; animation-duration: 10s; animation-delay: -6s; }
+.heart-3 { left: 15%; font-size: 16px; opacity: 0.4; animation-duration: 15s; animation-delay: -1s; }
+.heart-4 { left: 19%; font-size: 20px; opacity: 0.6; animation-duration: 11s; animation-delay: -4s; }
+.heart-5 { left: 23%; font-size: 14px; opacity: 0.5; animation-duration: 13s; animation-delay: -7s; }
+.heart-6 { left: 27%; font-size: 18px; opacity: 0.7; animation-duration: 10s; animation-delay: -2s; }
+.heart-7 { left: 31%; font-size: 12px; opacity: 0.4; animation-duration: 14s; animation-delay: -5s; }
+.heart-8 { left: 35%; font-size: 16px; opacity: 0.6; animation-duration: 12s; animation-delay: -8s; }
+.heart-9 { left: 39%; font-size: 20px; opacity: 0.5; animation-duration: 11s; animation-delay: -1s; }
+.heart-10 { left: 43%; font-size: 14px; opacity: 0.7; animation-duration: 15s; animation-delay: -4s; }
+.heart-11 { left: 47%; font-size: 18px; opacity: 0.4; animation-duration: 10s; animation-delay: -7s; }
+.heart-12 { left: 51%; font-size: 12px; opacity: 0.6; animation-duration: 13s; animation-delay: -2s; }
+.heart-13 { left: 55%; font-size: 16px; opacity: 0.5; animation-duration: 14s; animation-delay: -5s; }
+.heart-14 { left: 59%; font-size: 20px; opacity: 0.7; animation-duration: 11s; animation-delay: -8s; }
+.heart-15 { left: 63%; font-size: 14px; opacity: 0.4; animation-duration: 12s; animation-delay: -1s; }
+.heart-16 { left: 67%; font-size: 18px; opacity: 0.6; animation-duration: 10s; animation-delay: -4s; }
+.heart-17 { left: 71%; font-size: 12px; opacity: 0.5; animation-duration: 15s; animation-delay: -7s; }
+.heart-18 { left: 75%; font-size: 16px; opacity: 0.7; animation-duration: 13s; animation-delay: -2s; }
+.heart-19 { left: 79%; font-size: 20px; opacity: 0.4; animation-duration: 11s; animation-delay: -5s; }
+.heart-20 { left: 83%; font-size: 14px; opacity: 0.6; animation-duration: 14s; animation-delay: -8s; }
+.heart-21 { left: 87%; font-size: 18px; opacity: 0.5; animation-duration: 10s; animation-delay: -1s; }
+.heart-22 { left: 91%; font-size: 12px; opacity: 0.7; animation-duration: 12s; animation-delay: -4s; }
+.heart-23 { left: 95%; font-size: 16px; opacity: 0.4; animation-duration: 15s; animation-delay: -7s; }
+.heart-24 { left: 99%; font-size: 20px; opacity: 0.6; animation-duration: 11s; animation-delay: -3s; }
+
+/* Confetti particles */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh) translateX(40px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti-particle {
+  position: absolute;
+  border-radius: 1px;
+  animation: confetti-fall linear infinite;
+}
+
+/* Confetti colors */
+.confetti-gold { background-color: #ffd700; }
+.confetti-red { background-color: #ff6b6b; }
+.confetti-teal { background-color: #4ecdc4; }
+.confetti-blue { background-color: #45b7d1; }
+.confetti-green { background-color: #96ceb4; }
+.confetti-pink { background-color: #ff9ff3; }
+.confetti-sky { background-color: #54a0ff; }
+
+/* 30 confetti variants */
+.confetti-0 { left: 2%; width: 8px; height: 5px; animation-duration: 6s; animation-delay: 0s; }
+.confetti-1 { left: 5%; width: 10px; height: 6px; animation-duration: 7s; animation-delay: -2s; }
+.confetti-2 { left: 9%; width: 6px; height: 4px; animation-duration: 5s; animation-delay: -4s; }
+.confetti-3 { left: 13%; width: 9px; height: 5px; animation-duration: 8s; animation-delay: -1s; }
+.confetti-4 { left: 17%; width: 7px; height: 4px; animation-duration: 6s; animation-delay: -3s; }
+.confetti-5 { left: 20%; width: 11px; height: 7px; animation-duration: 7s; animation-delay: -5s; }
+.confetti-6 { left: 24%; width: 8px; height: 5px; animation-duration: 5s; animation-delay: -2s; }
+.confetti-7 { left: 28%; width: 6px; height: 4px; animation-duration: 8s; animation-delay: -4s; }
+.confetti-8 { left: 32%; width: 10px; height: 6px; animation-duration: 6s; animation-delay: -1s; }
+.confetti-9 { left: 35%; width: 7px; height: 4px; animation-duration: 7s; animation-delay: -3s; }
+.confetti-10 { left: 39%; width: 9px; height: 5px; animation-duration: 5s; animation-delay: -5s; }
+.confetti-11 { left: 43%; width: 11px; height: 7px; animation-duration: 8s; animation-delay: -2s; }
+.confetti-12 { left: 47%; width: 6px; height: 4px; animation-duration: 6s; animation-delay: -4s; }
+.confetti-13 { left: 50%; width: 8px; height: 5px; animation-duration: 7s; animation-delay: -1s; }
+.confetti-14 { left: 54%; width: 10px; height: 6px; animation-duration: 5s; animation-delay: -3s; }
+.confetti-15 { left: 58%; width: 7px; height: 4px; animation-duration: 8s; animation-delay: -5s; }
+.confetti-16 { left: 61%; width: 9px; height: 5px; animation-duration: 6s; animation-delay: -2s; }
+.confetti-17 { left: 65%; width: 11px; height: 7px; animation-duration: 7s; animation-delay: -4s; }
+.confetti-18 { left: 69%; width: 6px; height: 4px; animation-duration: 5s; animation-delay: -1s; }
+.confetti-19 { left: 72%; width: 8px; height: 5px; animation-duration: 8s; animation-delay: -3s; }
+.confetti-20 { left: 76%; width: 10px; height: 6px; animation-duration: 6s; animation-delay: -5s; }
+.confetti-21 { left: 80%; width: 7px; height: 4px; animation-duration: 7s; animation-delay: -2s; }
+.confetti-22 { left: 83%; width: 9px; height: 5px; animation-duration: 5s; animation-delay: -4s; }
+.confetti-23 { left: 87%; width: 11px; height: 7px; animation-duration: 8s; animation-delay: -1s; }
+.confetti-24 { left: 91%; width: 6px; height: 4px; animation-duration: 6s; animation-delay: -3s; }
+.confetti-25 { left: 94%; width: 8px; height: 5px; animation-duration: 7s; animation-delay: -5s; }
+.confetti-26 { left: 97%; width: 10px; height: 6px; animation-duration: 5s; animation-delay: -2s; }
+.confetti-27 { left: 4%; width: 7px; height: 4px; animation-duration: 8s; animation-delay: -6s; }
+.confetti-28 { left: 16%; width: 9px; height: 5px; animation-duration: 6s; animation-delay: -7s; }
+.confetti-29 { left: 37%; width: 11px; height: 7px; animation-duration: 7s; animation-delay: -8s; }
+
+/* Reduced motion - disable particle animations */
+@media (prefers-reduced-motion: reduce) {
+  .snowflake,
+  .heart-particle,
+  .confetti-particle {
+    animation: none;
+    display: none;
+  }
+}
+
+/* ============================================
+   Translate Widget - Floating Language Toggle
+   ============================================ */
+
+.translate-widget {
+  position: fixed;
+  bottom: 12px;
+  right: 36px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none; /* Allow scroll passthrough */
+}
+
+/* Container for button + close (for positioning) */
+.translate-widget__container {
+  position: relative;
+  pointer-events: auto; /* Re-enable clicks on buttons */
+}
+
+.translate-widget__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--brand-navy);
+  border: 2px solid var(--brand-navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.translate-widget__button:hover {
+  background: color-mix(in srgb, var(--brand-navy), black 15%);
+  border-color: color-mix(in srgb, var(--brand-navy), black 15%);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.translate-widget__button:focus {
+  outline: none;
+}
+
+/* Flag fills the entire button, scaled up to hide rectangular edges */
+.translate-widget__flag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.15);
+}
+
+/* Language text overlay on flag */
+.translate-widget__lang {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Close button - positioned at top-right corner */
+.translate-widget__close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--muted-foreground);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  z-index: 2;
+}
+
+.translate-widget__close:hover {
+  background: var(--brand-navy);
+  color: white;
+  border-color: var(--brand-navy);
+}
+
+.translate-widget__close:focus {
+  outline: none;
+}
+
+/* Confirmation tooltip - appears below widget */
+.translate-widget__confirm {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  pointer-events: auto; /* Re-enable clicks on confirm dialog */
+}
+
+.translate-widget__confirm[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.translate-widget__confirm-text {
+  font-size: 0.875rem;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.translate-widget__confirm-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.translate-widget__confirm-btn {
+  padding: 4px 10px;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.translate-widget__confirm-btn--yes {
+  background: var(--brand-navy);
+  color: white;
+  border: none;
+}
+
+.translate-widget__confirm-btn--yes:hover {
+  background: color-mix(in srgb, var(--brand-navy), black 10%);
+}
+
+.translate-widget__confirm-btn--no {
+  background: transparent;
+  color: var(--muted-foreground);
+  border: 1px solid var(--border);
+}
+
+.translate-widget__confirm-btn--no:hover {
+  background: var(--muted);
+  color: var(--foreground);
+}
+
+
+
+/* Dark mode adjustments */
+.dark .translate-widget__confirm {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+.dark .translate-widget__close {
+  background: var(--card);
+  border-color: var(--border);
+}

@@ -1,0 +1,546 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Our Firm",
+    "attorneys": "Our Attorneys",
+    "practices": "Practice Areas",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "metaTitle": "Delgado Legal P.A. | Real Estate Attorney Miami Lakes, FL",
+    "metaDescription": "DELGADO LEGAL, P.A. is a full-service law firm and licensed title agent in Miami Lakes, FL. Real estate closings, estate planning, foreclosure defense, and more.",
+    "hero": {
+      "subtitle": "Real Estate & Legal Solutions",
+      "title": "Your Trusted Partner for Real Estate and Legal Solutions",
+      "description": "DELGADO LEGAL, P.A. is a full-service law firm and licensed title agent providing expert real estate closings, estate planning, and a variety of legal services throughout South Florida.",
+      "ctaPrimary": "Contact Us",
+      "ctaSecondary": "Our Services"
+    },
+    "practices": {
+      "subtitle": "Our Services",
+      "title": "Practice Areas",
+      "description": "We offer expert legal representation across multiple practice areas to meet your diverse needs.",
+      "viewAll": "View All Practice Areas",
+      "areas": {
+        "realEstate": {
+          "title": "Real Estate Closings",
+          "description": "Smooth real estate transactions from start to finish. Licensed title agent services for buyers, sellers, and agents."
+        },
+        "foreclosure": {
+          "title": "Foreclosure Defense",
+          "description": "Protecting your home and financial future with experienced legal advocacy."
+        },
+        "commercial": {
+          "title": "Commercial Transactions",
+          "description": "Navigate complex business deals with confidence. Expert guidance for commercial property matters."
+        },
+        "estate": {
+          "title": "Estate Planning",
+          "description": "Secure your family's future with wills, trusts, and comprehensive estate planning services."
+        }
+      }
+    },
+    "about": {
+      "subtitle": "About Us",
+      "title": "Your Trusted Legal Partner",
+      "description1": "At DELGADO LEGAL, P.A., we believe in celebrating our clients' victories. Each success story is proof of the trust our clients place in us.",
+      "description2": "We're not just attorneys; we're partners in your success story. Whether you're buying your first home, planning for your family's future, or navigating a complex transaction, we provide personalized attention and clear communication throughout your case.",
+      "cta": "About Our Firm"
+    },
+    "testimonials": {
+      "subtitle": "Testimonials",
+      "title": "What Our Clients Say",
+      "viewAll": "Read More Testimonials"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Contact us today to discuss your real estate transaction or legal matter.",
+      "button": "Contact Us Today"
+    }
+  },
+  "about": {
+    "metaTitle": "About Our Firm | Delgado Legal P.A.",
+    "metaDescription": "Learn about DELGADO LEGAL, P.A. - a full-service law firm in Miami Lakes, FL. Meet our attorneys Michael and Vanessa Delgado.",
+    "hero": {
+      "subtitle": "About Us",
+      "title": "Celebrating Our Clients' Victories",
+      "description": "Each success is proof of the trust our clients place in us. We're not just attorneys; we're partners in your success story."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description1": "At DELGADO LEGAL, P.A., our mission is to provide legal support and guidance to our clients and help them navigate complex legal challenges with confidence.",
+      "description2": "We are committed to delivering high quality legal services that prioritize our clients' interests, ensuring their rights are protected, and their goals are achieved. Our mission is not just about practicing law; it's about making a positive impact on the lives of those we serve, one case at a time."
+    },
+    "stats": {
+      "cases": "Successful Cases Handled",
+      "years": "Years Of Legal Excellence",
+      "practiceAreas": "Practice Areas"
+    },
+    "values": {
+      "subtitle": "What We Stand For",
+      "title": "Our Core Values",
+      "items": {
+        "clientCentric": {
+          "title": "Client-Centric",
+          "description": "Putting our clients first is the cornerstone of our practice. We prioritize your needs and goals, ensuring tailored solutions."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "We uphold the highest ethical standards. Trust, honesty, and transparency are at the core of everything we do."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive for excellence in every case, providing top-tier legal representation no matter the complexity."
+        },
+        "expertise": {
+          "title": "Expertise",
+          "description": "With deep knowledge and extensive experience in various practice areas, we tackle the toughest legal challenges."
+        },
+        "personalized": {
+          "title": "Personalized",
+          "description": "We understand each client's situation is unique. We provide personalized attention and guidance you need."
+        },
+        "community": {
+          "title": "Community",
+          "description": "We believe in giving back. Our commitment extends beyond the courtroom through community engagement."
+        }
+      }
+    },
+    "team": {
+      "subtitle": "Meet the Team",
+      "title": "Our Attorneys",
+      "description": "Our team brings together diverse expertise and a shared commitment to client success. Meet attorneys Michael and Vanessa Delgado.",
+      "cta": "Meet Our Attorneys"
+    }
+  },
+  "attorneys": {
+    "metaTitle": "Our Attorneys | Delgado Legal P.A.",
+    "metaDescription": "Meet attorneys Michael and Vanessa Delgado - experienced legal professionals specializing in real estate law, estate planning, and more at Delgado Legal P.A.",
+    "hero": {
+      "subtitle": "Meet Our Team",
+      "title": "Our Attorneys",
+      "description": "Experienced legal professionals dedicated to protecting your interests and achieving the best possible outcomes for your case."
+    },
+    "labels": {
+      "education": "Education",
+      "experience": "Experience",
+      "years": "Years",
+      "linkedIn": "LinkedIn Profile"
+    },
+    "vanessa": {
+      "name": "Vanessa Delgado",
+      "role": "Attorney / Partner",
+      "bio": "With over 16 years of dedicated legal practice, Vanessa Delgado brings comprehensive expertise to every client engagement. Her depth of knowledge in real estate litigation and transactions, combined with her proficiency in estate planning, enables her to provide tailored legal solutions that address the full spectrum of her clients' needs.",
+      "specializations": {
+        "realEstateLitigation": "Real Estate Litigation",
+        "realEstateTransactions": "Real Estate Transactions",
+        "landlordTenant": "Landlord/Tenant Disputes",
+        "estatePlanning": "Estate Planning"
+      }
+    },
+    "michael": {
+      "name": "Michael Delgado",
+      "role": "Attorney / Partner",
+      "bio": "Michael Delgado has established himself as a distinguished attorney in real estate consumer matters, earning recognition as a Rising Star in 2022. His commitment to exceptional client representation and his thorough understanding of real estate law make him a trusted advocate for clients throughout the Hialeah and greater Miami area.",
+      "specializations": {
+        "realEstateConsumer": "Real Estate Consumer Matters"
+      }
+    },
+    "together": {
+      "subtitle": "A Partnership Built on Excellence",
+      "title": "Delgado Legal, P.A.",
+      "description1": "Since founding Delgado Legal, P.A. in 2014, Michael and Vanessa Delgado have built a practice rooted in client advocacy and legal excellence. Their combined expertise spans real estate law, litigation, and estate planning, offering comprehensive legal solutions to individuals and families throughout South Florida.",
+      "description2": "Together, they bring over three decades of combined legal experience, a shared commitment to exceptional service, and a deep understanding of the challenges their clients face.",
+      "cta": "Schedule a Consultation"
+    }
+  },
+  "practices": {
+    "metaTitle": "Practice Areas | Delgado Legal P.A. - Real Estate Law Miami",
+    "metaDescription": "Our practice areas: Real Estate Closings, Foreclosure Defense, Commercial Transactions, Estate Planning, and Uncontested Divorces. Serving South Florida.",
+    "hero": {
+      "subtitle": "Our Services",
+      "title": "Practice Areas",
+      "description": "From real estate transactions to estate planning, we offer full-service legal expertise tailored to your needs."
+    },
+    "servicesInclude": "Services Include:",
+    "scheduleCta": "Schedule Consultation",
+    "areas": {
+      "realEstate": {
+        "title": "Real Estate Closings",
+        "description": "Smooth real estate transactions from start to finish. As a licensed title agent, we handle all aspects of your residential closing with expertise and attention to detail.",
+        "services": {
+          "residential": "Residential Closings",
+          "titleSearch": "Title Search & Insurance",
+          "contracts": "Purchase & Sale Contracts",
+          "settlement": "Settlement Services",
+          "refinancing": "Refinancing",
+          "fsbo": "For Sale By Owner (FSBO)"
+        }
+      },
+      "foreclosure": {
+        "title": "Foreclosure Defense",
+        "description": "Protecting your home and financial future. We provide experienced legal advocacy to help you explore all available options.",
+        "services": {
+          "loanMod": "Loan Modification Assistance",
+          "litigation": "Foreclosure Litigation",
+          "shortSale": "Short Sale Negotiations",
+          "deedInLieu": "Deed in Lieu Options",
+          "lossMitigation": "Loss Mitigation",
+          "bankruptcy": "Bankruptcy Alternatives"
+        }
+      },
+      "commercial": {
+        "title": "Commercial Transactions",
+        "description": "Navigate complex business deals with confidence. Our team provides expert guidance for commercial property matters and business transactions.",
+        "services": {
+          "closings": "Commercial Property Closings",
+          "lease": "Lease Negotiations",
+          "asset": "Business Asset Purchases",
+          "dueDiligence": "Due Diligence Review",
+          "contracts": "Contract Drafting",
+          "title": "Title Services"
+        }
+      },
+      "estate": {
+        "title": "Estate Planning",
+        "description": "Secure your family's future with comprehensive estate planning services tailored to your unique situation and goals.",
+        "services": {
+          "wills": "Wills & Trusts",
+          "poa": "Power of Attorney",
+          "healthcare": "Healthcare Directives",
+          "probate": "Probate Assistance",
+          "assetProtection": "Asset Protection",
+          "administration": "Estate Administration"
+        }
+      },
+      "divorce": {
+        "title": "Uncontested Divorces",
+        "description": "Simple, efficient family transitions. We help couples who have reached agreement navigate the divorce process smoothly.",
+        "services": {
+          "filing": "Uncontested Divorce Filing",
+          "settlement": "Settlement Agreements",
+          "property": "Property Division Docs",
+          "parenting": "Parenting Plans",
+          "nameChange": "Name Changes",
+          "judgment": "Final Judgment Preparation"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Contact us today to discuss your real estate transaction or legal matter.",
+      "button": "Contact Us"
+    }
+  },
+  "faq": {
+    "metaTitle": "FAQ | Delgado Legal P.A. - Real Estate Closing Questions",
+    "metaDescription": "Frequently asked questions about real estate closings, estate planning, and our legal services at Delgado Legal P.A. in Miami Lakes, FL.",
+    "hero": {
+      "subtitle": "Resources",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services and the legal process."
+    },
+    "categories": {
+      "realEstate": {
+        "title": "Real Estate Closings",
+        "questions": {
+          "whatIsClosing": {
+            "question": "What is a real estate closing?",
+            "answer": "A real estate closing is the final step in a property transaction where ownership officially transfers from seller to buyer. As your title agent, we coordinate all parties, ensure documents are properly executed, funds are distributed, and the title is recorded."
+          },
+          "howLong": {
+            "question": "How long does a typical closing take?",
+            "answer": "Most residential closings take 30-45 days from contract to close. However, cash transactions can close much faster. We work efficiently to meet your timeline while ensuring all details are handled properly."
+          },
+          "whatToBring": {
+            "question": "What do I need to bring to closing?",
+            "answer": "Bring a valid government-issued photo ID (driver's license or passport). If you're the buyer, you'll also need a cashier's check or wire transfer for closing costs. We'll provide a detailed closing disclosure beforehand so you know the exact amount."
+          },
+          "mobileClosings": {
+            "question": "Do you offer mobile closings?",
+            "answer": "Yes, we can arrange mobile closings at a location convenient for you, whether that's your home, office, or the property being purchased. Contact us to discuss arrangements."
+          }
+        }
+      },
+      "realtors": {
+        "title": "Working With Realtors",
+        "questions": {
+          "howWork": {
+            "question": "How do you work with real estate agents?",
+            "answer": "We partner closely with realtors to ensure smooth transactions. We provide regular updates, quick turnaround on documents, and remain in full control of the deal from contract to closing. Many agents consider us their preferred closing partner."
+          },
+          "complexTransactions": {
+            "question": "Can you handle difficult or complex transactions?",
+            "answer": "Absolutely. We have experience with a variety of complex situations including short sales, foreclosure purchases, estate sales, and transactions with title issues. We work to find solutions and keep deals on track."
+          }
+        }
+      },
+      "estatePlanning": {
+        "title": "Estate Planning",
+        "questions": {
+          "whyWill": {
+            "question": "Why do I need a will?",
+            "answer": "A will ensures your assets are distributed according to your wishes and can name guardians for minor children. Without a will, state law determines how your property is divided, which may not align with your preferences."
+          },
+          "willVsTrust": {
+            "question": "What's the difference between a will and a trust?",
+            "answer": "A will goes through probate court after death, while a trust can transfer assets immediately without court involvement. Trusts offer more privacy and can be useful for complex estates. We can help determine which is right for your situation."
+          }
+        }
+      },
+      "general": {
+        "title": "General Questions",
+        "questions": {
+          "schedule": {
+            "question": "How do I schedule an appointment?",
+            "answer": "You can contact us by phone at (786) 762-2389, email at michael@delgadolegalpa.com, or use the contact form on our website. We typically respond within 24 hours."
+          },
+          "areas": {
+            "question": "What areas do you serve?",
+            "answer": "We serve clients throughout South Florida, with our office located in Miami Lakes, FL. We handle closings across Miami-Dade, Broward, and Palm Beach counties."
+          },
+          "fees": {
+            "question": "What are your fees?",
+            "answer": "Our fees vary depending on the type of transaction and its complexity. We provide transparent pricing upfront with no hidden fees. Contact us for a quote specific to your needs."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Still Have Questions?",
+      "description": "Our team is here to help. Contact us for personalized answers to your legal questions.",
+      "button": "Contact Us"
+    }
+  },
+  "testimonials": {
+    "metaTitle": "Client Testimonials | Delgado Legal P.A.",
+    "metaDescription": "Read what our clients say about working with Delgado Legal P.A. Real testimonials from realtors and homebuyers in South Florida.",
+    "hero": {
+      "subtitle": "Client Stories",
+      "title": "What Our Clients Say",
+      "description": "Hear from the realtors, buyers, and clients we've had the privilege to work with throughout South Florida."
+    },
+    "roles": {
+      "realtor": "Realtor",
+      "realEstateAgent": "Real Estate Agent",
+      "buyer": "Buyer"
+    },
+    "cta": {
+      "title": "Ready to Work With Us?",
+      "description": "Let us help make your real estate transaction smooth and stress-free.",
+      "button": "Contact Us Today"
+    },
+    "items": [
+      {
+        "quote": "Thank you for being the BEST partner any realtor can ask for. You are amazing! Your professionalism and hard work is like no other. You remain in full control of the deal at all times. I can't thank you enough!",
+        "author": "Estrella P.",
+        "roleKey": "testimonials.roles.realtor",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-1.webp"
+      },
+      {
+        "quote": "First time I see an attorney bend over backwards for everyone involved in the transaction. I will keep in mind the way you work. Congratulations!",
+        "author": "Amada C.",
+        "roleKey": "testimonials.roles.realtor",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-3.webp"
+      },
+      {
+        "quote": "Michael, you helped big time. I haven't forgotten about you and what I have these types of sellers will always keep you 1st in line. Thank you kindly.",
+        "author": "Brenda A.",
+        "roleKey": "testimonials.roles.realEstateAgent",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-4.webp"
+      },
+      {
+        "quote": "Just a quick note to say Thank You for all your support during this process… 5 star service!!!",
+        "author": "A.T.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-2.webp"
+      },
+      {
+        "quote": "You are the best!!! Can't thank you enough for everything!",
+        "author": "Gretel M.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-5.webp"
+      },
+      {
+        "quote": "You are professional, thorough, and caring! It was great working with you!",
+        "author": "Aymee F.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-1.webp"
+      },
+      {
+        "quote": "Thank you for making this a quick and painless process. You guys did a great job!",
+        "author": "Carlos R.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-2.webp"
+      },
+      {
+        "quote": "Thank you again for everything. I'm so glad we met years ago and we've been able to work together. So diligently… efficiently… professional, just amazing!",
+        "author": "Katie M.",
+        "roleKey": "testimonials.roles.buyer",
+        "rating": 5,
+        "image": "/images/testimonials/delgado-customer-3.webp"
+      }
+    ]
+  },
+  "contact": {
+    "metaTitle": "Contact Us | Delgado Legal P.A. - Miami Lakes, FL",
+    "metaDescription": "Contact DELGADO LEGAL, P.A. in Miami Lakes, FL. Call (786) 762-2389 or email michael@delgadolegalpa.com for real estate closings and legal services.",
+    "hero": {
+      "subtitle": "Get in Touch",
+      "title": "Contact Us",
+      "description": "Ready to discuss your real estate closing or legal matter? Contact us today."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "serviceType": "Type of Service",
+      "selectService": "Select a service...",
+      "message": "Your Message",
+      "messagePlaceholder": "Please describe your situation...",
+      "submit": "Send Message",
+      "required": "*",
+      "disclaimer": "By submitting this form, you agree to our privacy policy. Your information is kept confidential.",
+      "services": {
+        "realEstate": "Real Estate Closing",
+        "foreclosure": "Foreclosure Defense",
+        "commercial": "Commercial Transaction",
+        "estate": "Estate Planning",
+        "divorce": "Uncontested Divorce",
+        "other": "Other"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "6500 Cow Pen Rd STE 304,\nMiami Lakes, FL\n33014",
+      "hours": "Office Hours",
+      "hoursValue": "Mon-Fri: 9AM - 6PM\nSat: By Appointment"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu"
+  },
+  "footer": {
+    "tagline": "Dedicated to providing exceptional legal services with integrity, compassion, and commitment to our clients.",
+    "services": "Practice Areas",
+    "company": "Company",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} Delgado Legal. All rights reserved."
+  },
+  "privacy": {
+    "hero": {
+      "subtitle": "Legal",
+      "title": "Privacy Policy",
+      "description": "Your privacy is important to us. This policy explains how we collect, use, and protect your information."
+    },
+    "sections": {
+      "collection": {
+        "title": "Information We Collect",
+        "content": "When you use our contact form, we collect the information you provide, including your name, email address, phone number (if provided), and the content of your message. We do not collect any information automatically beyond standard server logs."
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "content": "We use the information you provide solely to respond to your inquiries and to communicate with you about our legal services. We do not use your information for marketing purposes unless you explicitly consent."
+      },
+      "protection": {
+        "title": "How We Protect Your Information",
+        "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. Your information is stored securely and accessed only by authorized personnel."
+      },
+      "sharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell, trade, or otherwise transfer your personal information to third parties. We may share information only when required by law or to protect our rights."
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "content": "Our website may use essential cookies to ensure proper functionality. We do not use cookies for advertising or tracking purposes."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "You have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us using the information provided below."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at michael@delgadolegalpa.com or call (786) 762-2389."
+      }
+    },
+    "lastUpdated": "Last updated: February 2026"
+  },
+  "terms": {
+    "hero": {
+      "subtitle": "Legal",
+      "title": "Terms of Service",
+      "description": "Please read these terms carefully before using our website."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using the Delgado Legal, P.A. website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website."
+      },
+      "services": {
+        "title": "Description of Services",
+        "content": "This website provides general information about Delgado Legal, P.A. and our legal services. The website includes a contact form that allows you to submit inquiries to our firm."
+      },
+      "noAttorneyClient": {
+        "title": "No Attorney-Client Relationship",
+        "content": "Use of this website or submission of a contact form does not create an attorney-client relationship. An attorney-client relationship is only established through a signed engagement letter. Information submitted through the contact form is not confidential until an attorney-client relationship is established."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on this website, including text, graphics, logos, and images, is the property of Delgado Legal, P.A. and is protected by copyright and trademark laws. You may not reproduce, distribute, or use any content without our written permission."
+      },
+      "userConduct": {
+        "title": "User Conduct",
+        "content": "You agree to use this website only for lawful purposes. You may not use the website in any way that could damage, disable, or impair the website or interfere with any other party's use of the website."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "The information on this website is provided for general informational purposes only and does not constitute legal advice. You should not act or rely on any information on this website without seeking the advice of a licensed attorney."
+      },
+      "limitation": {
+        "title": "Limitation of Liability",
+        "content": "Delgado Legal, P.A. shall not be liable for any damages arising from your use of this website or any information provided on this website. This includes direct, indirect, incidental, consequential, or punitive damages."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These Terms of Service are governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting to the website. Your continued use of the website constitutes acceptance of the modified terms."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about these Terms of Service, please contact us at michael@delgadolegalpa.com or call (786) 762-2389."
+      }
+    },
+    "lastUpdated": "Last updated: February 2026"
+  }
+}
