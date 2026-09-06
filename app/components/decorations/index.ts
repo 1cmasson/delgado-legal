@@ -6,3 +6,4 @@ export { Gavel } from "./svgs/Gavel";
 export { GoldRing } from "./svgs/GoldRing";
 export { ArtDecoCorner } from "./svgs/ArtDecoCorner";
 export { DecorativeElement } from "./DecorativeElement";
+export { SheenRule, Orb } from "./Ornaments";

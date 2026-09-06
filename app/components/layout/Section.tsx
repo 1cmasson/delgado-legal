@@ -3,17 +3,30 @@ import { cn } from "~/lib/utils";
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  background?: "default" | "muted" | "primary" | "accent" | "accent-solid";
+  background?:
+    | "default"
+    | "muted"
+    | "primary"
+    | "accent"
+    | "accent-solid"
+    | "navy-gradient";
   id?: string;
   size?: "default" | "compact" | "hero";
+  /**
+   * Ornaments (orbs, sheen rules, decorative SVGs) rendered *behind* the
+   * content container so they sit at z-0 rather than inside the z-10 wrapper.
+   */
+  overlay?: React.ReactNode;
 }
 
 const backgroundClasses = {
   default: "bg-background",
-  muted: "bg-muted",
+  muted: "bg-mist",
   primary: "bg-primary text-primary-foreground",
-  accent: "bg-accent/10",
-  "accent-solid": "bg-accent text-accent-foreground",
+  accent: "bg-mist",
+  // The old gold band — now the silver gradient band from the design.
+  "accent-solid": "bg-[image:var(--grad-cta-band)] text-navy-900",
+  "navy-gradient": "bg-[image:var(--grad-practices)] text-white",
 };
 
 const sizeClasses = {
@@ -28,6 +41,7 @@ export function Section({
   background = "default",
   id,
   size = "default",
+  overlay,
 }: SectionProps) {
   return (
     <section
@@ -39,6 +53,7 @@ export function Section({
         className
       )}
     >
+      {overlay}
       <div className="container mx-auto px-4 relative z-10">
         {children}
       </div>

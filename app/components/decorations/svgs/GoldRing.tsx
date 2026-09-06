@@ -17,7 +17,7 @@ export function GoldRing({ className, size = 256 }: GoldRingProps) {
         cx="128"
         cy="128"
         r="120"
-        stroke="var(--brand-gold)"
+        stroke="var(--brand-silver)"
         strokeWidth="3"
         fill="none"
       />

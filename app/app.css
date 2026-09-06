@@ -7,15 +7,25 @@
   --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Brand ramp exposed as Tailwind utilities (text-navy-800, border-silver, ...) */
+  --color-navy-900: #0a1b2e;
+  --color-navy-800: #12283f;
+  --color-navy-700: #16324f;
+  --color-navy-600: #1b3a5f;
+  --color-navy-500: #27476d;
+  --color-steel: #35577d;
+  --color-silver: #c4d3e3;
+  --color-mist: #f6fafd;
+  --color-hairline: #e1e7ee;
+  --color-edge: #c9d6e4;
+  --color-ink-body: #41526a;
+  --color-ink-muted: #5a6b7e;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  background-color: var(--background);
 }
 
 @theme inline {
@@ -61,42 +71,72 @@ body {
 
 :root {
   --radius: 0.625rem;
-  /* Delgado Legal Brand Colors */
-  --brand-navy: #033A5B;
-  --brand-gold: #E4BE72;
+
+  /* Delgado Legal brand ramp — navy + silver */
+  --navy-900: #0A1B2E;
+  --navy-800: #12283F;
+  --navy-700: #16324F;
+  --navy-600: #1B3A5F;
+  --navy-500: #27476D;
+  --brand-navy: var(--navy-900);
+  /* Accent is two colors: steel reads on light surfaces, silver reads on navy. */
+  --brand-steel: #35577D;
+  --brand-silver: #C4D3E3;
+  --brand-mist: #F6FAFD;
   --brand-gray: #8B8B8B;
-  
+  --line: #E1E7EE;
+  --edge: #C9D6E4;
+  --ink-body: #41526A;
+  --ink-muted: #5A6B7E;
+
+  /* Surface + control gradients lifted from the design */
+  --grad-navy-btn: linear-gradient(135deg, #12283F 0%, #1B3A5F 52%, #27476D 100%);
+  --grad-silver-btn: linear-gradient(135deg, #F7F9FC 0%, #DDE6EF 45%, #C9D6E4 72%, #A9BBCE 100%);
+  --grad-hero: linear-gradient(180deg, #0A1B2E 0%, #12283F 32%, #16324F 66%, #1B3A5F 100%);
+  --grad-practices: linear-gradient(180deg, #1B3A5F 0%, #16324F 34%, #12283F 68%, #0A1B2E 100%);
+  --grad-footer: linear-gradient(165deg, #27476D 0%, #1B3A5F 34%, #12283F 70%, #0A1B2E 100%);
+  --grad-cta-band: linear-gradient(180deg, #F2F6FA 0%, #DCE6F0 46%, #C3D2E1 100%);
+  --grad-surface: linear-gradient(180deg, #FFFFFF 0%, #F6FAFD 100%);
+
+  /* Shared elevation */
+  --shadow-navy-btn: inset 0 1px 0 rgba(196, 211, 227, 0.32), 0 14px 30px -16px rgba(10, 27, 46, 0.85);
+  --shadow-navy-btn-hover: inset 0 1px 0 rgba(196, 211, 227, 0.48), 0 20px 36px -16px rgba(10, 27, 46, 0.9);
+  --shadow-silver-btn: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 10px 22px -16px rgba(10, 27, 46, 0.5);
+  --shadow-silver-btn-hover: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 30px -16px rgba(10, 27, 46, 0.55);
+  --shadow-card: 0 20px 40px -32px rgba(10, 27, 46, 0.6);
+  --shadow-card-hover: 0 30px 52px -28px rgba(10, 27, 46, 0.55);
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.35 0.02 240); /* Navy-tinted dark */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.35 0.02 240);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.35 0.02 240);
-  --primary: oklch(0.30 0.05 240); /* Navy blue #033A5B */
+  --primary: #12283F; /* Navy 800 */
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.30 0.05 240);
-  --muted: oklch(0.97 0 0);
+  --secondary-foreground: #12283F;
+  --muted: #F6FAFD;
   --muted-foreground: oklch(0.60 0 0); /* Gray #8B8B8B */
-  --accent: oklch(0.80 0.10 80); /* Gold #E4BE72 */
-  --accent-foreground: oklch(0.30 0.05 240);
+  --accent: #35577D; /* Steel — the on-light accent */
+  --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.80 0.10 80); /* Gold for focus ring */
+  --border: #E1E7EE;
+  --input: #E1E7EE;
+  --ring: #35577D; /* Steel focus ring */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.30 0.05 240); /* Navy */
+  --sidebar: #12283F;
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.80 0.10 80); /* Gold */
-  --sidebar-primary-foreground: oklch(0.30 0.05 240);
-  --sidebar-accent: oklch(0.35 0.04 240);
+  --sidebar-primary: #C4D3E3;
+  --sidebar-primary-foreground: #0A1B2E;
+  --sidebar-accent: #1B3A5F;
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.40 0.04 240);
-  --sidebar-ring: oklch(0.80 0.10 80);
+  --sidebar-border: #27476D;
+  --sidebar-ring: #35577D;
 }
 
 .dark {
@@ -181,6 +221,66 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .animate-float-slow {
+    animation: none;
+  }
+}
+
+/* ============================================
+   Navy + silver ornaments
+   ============================================ */
+
+@keyframes dl-sheen {
+  0% {
+    background-position: -160% 0;
+  }
+  100% {
+    background-position: 260% 0;
+  }
+}
+
+@keyframes dl-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0) scale(1.05);
+  }
+}
+
+/* A 2px silver rule that sweeps left to right. Place on an absolutely
+   positioned, aria-hidden element spanning the edge of a navy surface. */
+.dl-sheen {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 211, 227, 0) 0%,
+    var(--brand-silver) 45%,
+    rgba(196, 211, 227, 0.15) 100%
+  );
+  background-size: 220% 100%;
+  animation: dl-sheen 12s ease-in-out infinite;
+}
+
+/* A soft silver glow that drifts. Size and position it at the call site. */
+.dl-orb {
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 40% 40%,
+    rgba(196, 211, 227, var(--dl-orb-strength, 0.16)),
+    rgba(196, 211, 227, 0) 70%
+  );
+  animation: dl-drift 21s ease-in-out infinite;
+}
+
+.dl-orb--reverse {
+  animation-direction: reverse;
+  animation-duration: 27s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dl-sheen,
+  .dl-orb {
     animation: none;
   }
 }

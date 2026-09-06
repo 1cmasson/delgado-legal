@@ -440,7 +440,8 @@
     "loading": "Loading...",
     "error": "An error occurred",
     "skipToContent": "Skip to main content",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "menu": "Menu"
   },
   "footer": {
     "tagline": "Dedicated to providing exceptional legal services with integrity, compassion, and commitment to our clients.",
@@ -542,5 +543,47 @@
       }
     },
     "lastUpdated": "Last updated: February 2026"
+  },
+  "site": {
+    "cta": {
+      "nextStep": "Next step"
+    },
+    "cards": {
+      "michael": "Michael's digital card",
+      "vanessa": "Vanessa's digital card",
+      "firmLine": "Delgado Legal P.A. · Miami Lakes, FL",
+      "call": "Call",
+      "emailOffice": "Email the office",
+      "directions": "Directions",
+      "suite": "6500 Cow Pen Rd, Suite 304",
+      "saveContact": "Save contact",
+      "contactSaved": "Contact saved",
+      "shareCard": "Share card",
+      "sharing": "Sharing…",
+      "linkCopied": "Link copied",
+      "copyFailed": "Copy failed",
+      "about": "About",
+      "practiceFocus": "Practice focus",
+      "fullBio": "Full bio",
+      "superLawyers": "Super Lawyers",
+      "hours": "Office hours",
+      "openNow": "Open now",
+      "closedNow": "Closed now",
+      "weekdays": "Monday – Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "byAppointment": "By appointment",
+      "closed": "Closed",
+      "hoursNote": "Hours shown in Miami Lakes local time. Call or email any time — messages left after hours are answered the next business day.",
+      "office": "Office",
+      "openInMaps": "Open in Maps",
+      "mapsTitle": "Map of the Delgado Legal P.A. office in Miami Lakes",
+      "alsoAtFirm": "Also at the firm",
+      "viewHerCard": "View her card",
+      "viewHisCard": "View his card",
+      "footerCard": "Delgado Legal P.A. — a full-service law firm and licensed title agent in Miami Lakes, Florida.",
+      "fullWebsite": "Full website",
+      "practiceAreas": "Practice areas"
+    }
   }
 }

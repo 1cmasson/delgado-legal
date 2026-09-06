@@ -9,6 +9,7 @@ import { Button } from "~/components/ui/button";
 import { InitialsAvatar } from "~/components/ui/avatar";
 import { Link } from "react-router";
 import { useTranslation } from "~/providers/TranslationProvider";
+import { useParallax } from "~/hooks/useParallax";
 import { Footer } from "~/components/shared/Footer";
 
 export function meta({}: Route.MetaArgs) {
@@ -32,7 +33,7 @@ function StarRating({ rating }: { rating: number }) {
       {[...Array(5)].map((_, i) => (
         <span 
           key={i} 
-          className={i < rating ? "text-accent" : "text-muted"} 
+          className={i < rating ? "text-steel" : "text-border"} 
           aria-hidden="true"
         >
           ★
@@ -46,6 +47,7 @@ export default function Testimonials() {
   const { t, tRaw } = useTranslation();
   
   const testimonials = tRaw<Testimonial[]>('testimonials.items') || [];
+  const parallaxRef = useParallax(0.4);
 
   // Track which images have been used to avoid duplicates
   const usedImages = new Set<string>();
@@ -68,17 +70,17 @@ export default function Testimonials() {
 
       {/* Testimonials Grid Section */}
       <section className="py-16 md:py-24 relative overflow-hidden">
-        {/* Parallax Background - Mobile */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center grayscale md:hidden"
-          style={{ backgroundImage: "url('/images/backgrounds/testimonials/testimonials-bg-mobile.webp')" }}
-        />
-        {/* Parallax Background - Desktop */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed grayscale hidden md:block"
+        {/* JS-transform parallax: bg-fixed is unreliable on iOS/Android */}
+        <div
+          ref={parallaxRef}
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-[16%] h-[132%] bg-cover bg-center bg-no-repeat grayscale-[0.3] contrast-[1.05] saturate-[1.05] will-change-transform backface-hidden"
           style={{ backgroundImage: "url('/images/backgrounds/testimonials/testimonials-bg-desktop.webp')" }}
         />
-        <div className="absolute inset-0 bg-muted/85" />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-linear-[180deg,rgba(248,250,253,0.9)_0%,rgba(238,243,248,0.82)_50%,rgba(228,235,244,0.9)_100%]"
+        />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
@@ -87,7 +89,7 @@ export default function Testimonials() {
                 const imageSrc = getImageOrAvatar(testimonial);
                 return (
                   <SlideUpOnScroll key={index} delay={50 + index * 75}>
-                    <Card className="bg-muted h-full hover:shadow-md transition-shadow">
+                    <Card className="bg-background h-full hover:-translate-y-1 hover:border-edge hover:shadow-[var(--shadow-card-hover)]">
                       <CardContent className="pt-6 h-full flex flex-col">
                         <StarRating rating={testimonial.rating} />
                         <blockquote className="mt-4 flex flex-col flex-1">
@@ -97,7 +99,7 @@ export default function Testimonials() {
                               <img
                                 src={imageSrc}
                                 alt=""
-                                className="w-12 h-12 rounded-full object-cover border-2 border-accent"
+                                className="w-12 h-12 rounded-full object-cover border-2 border-edge"
                                 loading="lazy"
                               />
                             ) : (

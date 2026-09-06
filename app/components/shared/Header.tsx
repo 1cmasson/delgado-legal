@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { Spin as Hamburger } from 'hamburger-react';
-import { cn } from '~/lib/utils';
-import { Sheet, SheetContent, SheetTrigger } from '~/components/ui/sheet';
-import { useIsMobile } from '~/hooks/useMediaQuery';
+import { cn, tf } from '~/lib/utils';
+import { Sheet, SheetContent, SheetTitle } from '~/components/ui/sheet';
+import { SheenRule } from '~/components/decorations';
+import { SiteLogo } from '~/components/shared/SiteLogo';
+import { Button } from '~/components/ui/button';
 import { useTranslation } from '~/providers/TranslationProvider';
 
 interface HeaderProps {
@@ -14,7 +16,6 @@ interface HeaderProps {
 
 export function Header({ className }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const isMobile = useIsMobile();
   const { t } = useTranslation();
 
   const navigation = [
@@ -30,7 +31,7 @@ export function Header({ className }: HeaderProps) {
   return (
     <header
       className={cn(
-        'sticky top-0 z-[100] w-full border-b border-border/40 bg-background shadow-md',
+        'sticky top-0 z-[100] w-full border-b border-silver/60 bg-[image:var(--grad-surface)] shadow-[0_12px_32px_-20px_rgba(10,27,46,0.5)]',
         className
       )}
     >
@@ -39,35 +40,21 @@ export function Header({ className }: HeaderProps) {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link 
-          to="/" 
-          className="flex items-center gap-2"
+        <Link
+          to="/"
+          className="flex w-[143px] shrink-0 items-center"
           aria-label="Delgado Legal - Home"
         >
-          <picture>
-            <source
-              media="(min-width: 1024px)"
-              srcSet="/images/logos/logo-desktop.webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcSet="/images/logos/logo-tablet.webp"
-            />
-            <img
-              src="/images/logos/logo-mobile.webp"
-              alt="Delgado Legal"
-              className="h-14 w-auto"
-            />
-          </picture>
+          <SiteLogo />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:items-center lg:gap-8 lg:ml-12">
+        <div className="hidden lg:flex lg:items-center lg:gap-1.5 lg:ml-5">
           {navigation.map((item) => (
             <Link
               key={item.href}
               to={item.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-accent hover:underline focus:outline-none focus:underline px-2 py-1 whitespace-nowrap"
+              className="font-serif text-xs font-semibold uppercase tracking-[0.06em] text-foreground/85 whitespace-nowrap rounded-[9px] px-1.5 py-1.5 transition-[color,background,box-shadow] hover:text-navy-900 hover:bg-linear-[135deg,#F7FAFD,#DFE9F3] hover:shadow-[inset_0_0_0_1px_rgba(196,211,227,0.85)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-steel"
             >
               {t(item.labelKey)}
             </Link>
@@ -75,7 +62,7 @@ export function Header({ className }: HeaderProps) {
         </div>
 
         {/* Mobile Menu */}
-        <div className="lg:hidden relative z-[110] -mr-2 text-foreground/80 hover:text-foreground transition-colors">
+        <div className="lg:hidden relative z-[110] -mr-2 text-navy-700 transition-colors hover:text-navy-900">
           <Hamburger
             toggled={mobileMenuOpen}
             toggle={setMobileMenuOpen}
@@ -86,28 +73,37 @@ export function Header({ className }: HeaderProps) {
           />
         </div>
         <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen} modal={false}>
-          <SheetContent 
-            side="right" 
-            className="w-[300px] sm:w-[400px] border-l-4 border-l-[#E4BE72]" 
+          <SheetContent
+            side="right"
+            className="w-[300px] sm:w-[400px] border-l-4 border-l-silver bg-[image:var(--grad-surface)]"
             showCloseButton={false}
             onInteractOutside={(e) => e.preventDefault()}
             onPointerDownOutside={(e) => e.preventDefault()}
           >
-            <nav className="flex flex-col gap-4 mt-20" aria-label="Mobile navigation">
+            {/* Radix requires a title on every dialog surface for screen readers. */}
+            <SheetTitle className="sr-only">{tf(t, 'common.menu', 'Menu')}</SheetTitle>
+            <nav className="flex flex-col mt-20 px-4" aria-label="Mobile navigation">
               {navigation.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium py-2 px-4 rounded-md hover:bg-muted transition-colors"
+                  className="font-serif text-[15px] font-semibold uppercase tracking-[0.12em] leading-tight text-navy-700 border-b border-silver/60 rounded-[10px] px-2.5 py-[15px] transition-[background,color] hover:bg-linear-[135deg,#F7FAFD,#DFE9F3] hover:text-navy-900"
                 >
                   {t(item.labelKey)}
                 </Link>
               ))}
+              <Button asChild size="lg" className="mt-3.5 mb-4">
+                <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  {t('home.hero.ctaPrimary')}
+                </Link>
+              </Button>
             </nav>
           </SheetContent>
         </Sheet>
       </nav>
+
+      <SheenRule className="top-[72px]" />
 
       {/* Skip to content link for accessibility */}
       <a

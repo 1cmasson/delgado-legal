@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -79,9 +80,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 function AppContent() {
+  // The digital business cards are standalone landing pages: they own the full
+  // viewport and carry their own header, so the site nav would be noise.
+  const isStandaloneCard = useLocation().pathname.startsWith("/card/");
+
   return (
     <>
-      <Header />
+      {!isStandaloneCard && <Header />}
       <main id="main-content">
         <Outlet />
       </main>

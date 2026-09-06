@@ -2,8 +2,9 @@
 export const theme = {
   colors: {
     brand: {
-      navy: '#033A5B',
-      gold: '#E4BE72',
+      navy: '#0A1B2E',
+      steel: '#35577D',
+      silver: '#C4D3E3',
       gray: '#8B8B8B',
     },
     primary: 'var(--primary)',

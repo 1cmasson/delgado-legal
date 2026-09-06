@@ -1,6 +1,13 @@
 import { Link } from 'react-router';
 import { cn } from '~/lib/utils';
+import { Orb, SheenRule } from '~/components/decorations';
+import { SiteLogo } from '~/components/shared/SiteLogo';
 import { useTranslation } from '~/providers/TranslationProvider';
+
+const HEADING_CLASS =
+  'font-serif text-sm font-semibold uppercase tracking-[0.14em] text-silver mb-4';
+const LINK_CLASS =
+  'text-sm text-primary-foreground/70 hover:text-silver transition-colors';
 
 const footerLinks = {
   services: [
@@ -20,6 +27,10 @@ const footerLinks = {
     { name: 'michael@delgadolegalpa.com', href: 'mailto:michael@delgadolegalpa.com' },
     { name: '6500 Cow Pen Rd STE 304,\nMiami Lakes, FL\n33014', href: '/contact#location' },
   ],
+  cards: [
+    { nameKey: 'site.cards.michael', href: '/card/michael' },
+    { nameKey: 'site.cards.vanessa', href: '/card/vanessa' },
+  ],
 };
 
 interface FooterProps {
@@ -32,31 +43,25 @@ export function Footer({ className }: FooterProps) {
 
   return (
     <footer
-      className={cn('bg-primary text-primary-foreground', className)}
+      className={cn(
+        'relative overflow-hidden bg-[image:var(--grad-footer)] text-primary-foreground shadow-[inset_0_1px_0_rgba(196,211,227,0.3)]',
+        className
+      )}
       aria-label="Site footer"
     >
-      <div className="container mx-auto px-6 lg:px-8 py-12 lg:py-16">
+      <SheenRule className="z-[2]" />
+      <Orb className="-top-[200px] -left-[140px] h-[520px] w-[520px]" />
+
+      <div className="container relative z-[1] mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link to="/" aria-label="Delgado Legal - Home">
-              <picture>
-                <source
-                  media="(min-width: 1024px)"
-                  srcSet="/images/logos/footer-logo-desktop.webp"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcSet="/images/logos/footer-logo-tablet.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="/images/logos/footer-logo-mobile.webp"
-                  alt="Delgado Legal"
-                  className="h-16 w-auto"
-                />
-              </picture>
+            <Link
+              to="/"
+              aria-label="Delgado Legal - Home"
+              className="block w-[164px] max-w-full"
+            >
+              <SiteLogo theme="dark" />
             </Link>
             <p className="text-sm text-primary-foreground/80 max-w-xs">
               {t('footer.tagline')}
@@ -65,16 +70,11 @@ export function Footer({ className }: FooterProps) {
 
           {/* Services Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              {t('footer.services')}
-            </h3>
+            <h3 className={HEADING_CLASS}>{t('footer.services')}</h3>
             <ul className="space-y-3" role="list">
               {footerLinks.services.map((link) => (
                 <li key={link.nameKey}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                  >
+                  <Link to={link.href} className={LINK_CLASS}>
                     {t(link.nameKey)}
                   </Link>
                 </li>
@@ -84,16 +84,11 @@ export function Footer({ className }: FooterProps) {
 
           {/* Company Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              {t('footer.company')}
-            </h3>
+            <h3 className={HEADING_CLASS}>{t('footer.company')}</h3>
             <ul className="space-y-3" role="list">
               {footerLinks.company.map((link) => (
                 <li key={link.nameKey}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                  >
+                  <Link to={link.href} className={LINK_CLASS}>
                     {t(link.nameKey)}
                   </Link>
                 </li>
@@ -103,18 +98,26 @@ export function Footer({ className }: FooterProps) {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              {t('footer.contact')}
-            </h3>
+            <h3 className={HEADING_CLASS}>{t('footer.contact')}</h3>
             <ul className="space-y-3" role="list">
               {footerLinks.contact.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors whitespace-pre-line"
+                    className={cn(LINK_CLASS, 'whitespace-pre-line')}
                   >
                     {link.name}
                   </a>
+                </li>
+              ))}
+              {footerLinks.cards.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm font-semibold text-silver hover:text-white transition-colors"
+                  >
+                    {t(link.nameKey)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -130,13 +133,13 @@ export function Footer({ className }: FooterProps) {
             <div className="flex gap-6">
               <Link
                 to="/privacy"
-                className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
+                className="text-sm text-primary-foreground/60 hover:text-silver transition-colors"
               >
                 {t('footer.privacy')}
               </Link>
               <Link
                 to="/terms"
-                className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
+                className="text-sm text-primary-foreground/60 hover:text-silver transition-colors"
               >
                 {t('footer.terms')}
               </Link>
