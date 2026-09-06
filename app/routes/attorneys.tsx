@@ -74,7 +74,7 @@ function LinkedInLink({ href, label }: { href: string; label: string }) {
 
 function SpecializationBadge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block px-3 py-1 text-xs font-medium bg-accent/10 text-accent rounded-full">
+    <span className="inline-block px-3 py-1 text-xs font-medium bg-steel/10 text-steel rounded-full">
       {children}
     </span>
   );
@@ -177,7 +177,7 @@ export default function Attorneys() {
                       href={attorneys.michael.recognitionUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold bg-accent text-accent-foreground rounded hover:bg-accent/80 transition-colors"
+                      className="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold bg-steel text-white rounded hover:bg-navy-600 transition-colors"
                     >
                       ⭐ {attorneys.michael.recognition}
                     </a>
@@ -231,14 +231,14 @@ export default function Attorneys() {
           opacity={0.55}
           className="animate-float-slow mt-4 mr-4 md:mt-6 md:mr-6 lg:mt-8 lg:mr-8"
         >
-          <Scales size={140} color="var(--brand-gold)" />
+          <Scales size={140} color="var(--brand-silver)" />
         </DecorativeElement>
         <DecorativeElement
           position="bottom-left"
           opacity={0.55}
           className="hidden lg:block animate-float-slow mb-4 ml-4 lg:mb-8 lg:ml-8"
         >
-          <Gavel size={140} color="var(--brand-gold)" />
+          <Gavel size={140} color="var(--brand-silver)" />
         </DecorativeElement>
 
         <div className="max-w-5xl mx-auto text-center">
@@ -288,7 +288,7 @@ export default function Attorneys() {
           </SlideUpOnScroll>
 
           <SlideUpOnScroll delay={500}>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg">
               <Link to="/contact">{t('attorneys.together.cta')}</Link>
             </Button>
           </SlideUpOnScroll>

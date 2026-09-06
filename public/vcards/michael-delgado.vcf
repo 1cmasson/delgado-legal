@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Delgado;Michael;;;
+FN:Michael Delgado
+ORG:Delgado Legal P.A.
+TITLE:Attorney / Partner
+TEL;TYPE=WORK,VOICE:+17867622389
+EMAIL;TYPE=WORK:michael@delgadolegalpa.com
+ADR;TYPE=WORK:;;6500 Cow Pen Rd STE 304;Miami Lakes;FL;33014;USA
+URL:https://delgadolegalpa.com
+NOTE:Real estate closings, title services and estate planning. Office hours Mon-Fri 9AM-6PM, Saturday by appointment.
+END:VCARD

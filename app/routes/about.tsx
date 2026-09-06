@@ -49,10 +49,14 @@ export default function About() {
       />
 
       {/* Mission Section */}
-      <Section className="overflow-hidden">
-        <DecorativeElement position="top-right" opacity={0.4} className="top-[45%] lg:top-0">
-          <Document size={160} className="text-accent" animated />
-        </DecorativeElement>
+      <Section
+        className="overflow-hidden"
+        overlay={
+          <DecorativeElement position="top-right" opacity={0.4} className="top-[45%] lg:top-0">
+            <Document size={160} className="text-steel" animated />
+          </DecorativeElement>
+        }
+      >
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <SlideUpOnScroll>
@@ -109,7 +113,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {valueKeys.map((value, index) => (
               <SlideUpOnScroll key={value.key} delay={100 + index * 75}>
-                <Card className="text-center h-full bg-background hover:shadow-md transition-shadow">
+                <Card className="text-center h-full bg-background hover:-translate-y-1 hover:border-edge hover:shadow-[var(--shadow-card-hover)]">
                   <CardHeader>
                     <value.icon className="w-10 h-10 mx-auto mb-2 text-accent" aria-hidden="true" />
                     <CardTitle>{t(`about.values.items.${value.key}.title`)}</CardTitle>
@@ -125,17 +129,24 @@ export default function About() {
       </Section>
 
       {/* Meet Our Attorneys CTA Section */}
-      <Section background="accent-solid" id="team" size="compact">
-        <DecorativeElement position="center-left" opacity={0.25}>
-          <Column size={300} color="white" />
-        </DecorativeElement>
-        <DecorativeElement position="center-right" opacity={0.25}>
-          <Column size={300} color="white" />
-        </DecorativeElement>
-        
+      <Section
+        background="accent-solid"
+        id="team"
+        size="compact"
+        overlay={
+          <>
+            <DecorativeElement position="center-left" opacity={0.16}>
+              <Column size={300} color="var(--navy-900)" />
+            </DecorativeElement>
+            <DecorativeElement position="center-right" opacity={0.16}>
+              <Column size={300} color="var(--navy-900)" />
+            </DecorativeElement>
+          </>
+        }
+      >
         <div className="max-w-3xl mx-auto text-center">
           <FadeInOnScroll>
-            <Text as="span" size="sm" className="text-accent font-semibold uppercase tracking-wider">
+            <Text as="span" size="sm" className="text-steel font-semibold uppercase tracking-wider">
               {t('about.team.subtitle')}
             </Text>
           </FadeInOnScroll>
@@ -145,12 +156,12 @@ export default function About() {
             </Heading>
           </SlideUpOnScroll>
           <SlideUpOnScroll delay={200}>
-            <Text className="max-w-2xl mx-auto mb-8 text-gray-800">
+            <Text className="max-w-2xl mx-auto mb-8 text-ink-body">
               {t('about.team.description')}
             </Text>
           </SlideUpOnScroll>
           <SlideUpOnScroll delay={300}>
-            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90">
+            <Button asChild size="lg">
               <Link to="/attorneys">{t('about.team.cta')}</Link>
             </Button>
           </SlideUpOnScroll>

@@ -246,7 +246,7 @@ export default function Contact() {
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                        className="w-full"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (t('contact.form.submitting') || 'Sending...') : t('contact.form.submit')}
@@ -271,7 +271,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {contactInfo.map((info, index) => (
                   <SlideUpOnScroll key={info.titleKey} delay={150 + index * 75}>
-                    <Card className="h-full hover:shadow-md transition-shadow">
+                    <Card className="h-full hover:-translate-y-1 hover:border-edge hover:shadow-[var(--shadow-card-hover)]">
                       <CardContent className="pt-6">
                         <info.icon className="w-6 h-6 mb-2 text-accent" aria-hidden="true" />
                         <Text as="span" className="font-semibold block mb-1">

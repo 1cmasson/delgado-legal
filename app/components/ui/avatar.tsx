@@ -19,8 +19,8 @@ export function InitialsAvatar({ name, className }: InitialsAvatarProps) {
   return (
     <div
       className={cn(
-        "flex items-center justify-center rounded-full font-semibold border-2 border-accent",
-        "bg-[var(--brand-navy)] text-white",
+        "flex items-center justify-center rounded-full font-semibold border-2 border-edge",
+        "bg-navy-800 text-white",
         className
       )}
       aria-hidden="true"

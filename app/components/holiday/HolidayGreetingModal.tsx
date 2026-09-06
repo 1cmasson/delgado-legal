@@ -43,19 +43,19 @@ export function HolidayGreetingModal({ holiday }: HolidayGreetingModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && handleDismiss()}>
-      <DialogContent 
+      <DialogContent
         showCloseButton={false}
-        className="text-center"
+        className="text-center rounded-[20px] border-hairline shadow-[var(--shadow-card)]"
       >
         <DialogHeader className="items-center">
           <div className="text-6xl mb-2">{greeting.emoji}</div>
-          <DialogTitle 
-            className="text-2xl"
+          <DialogTitle
+            className="font-serif text-2xl text-steel"
             style={accentColor ? { color: accentColor } : undefined}
           >
             {greeting.title}
           </DialogTitle>
-          <DialogDescription className="text-base mt-2">
+          <DialogDescription className="text-base mt-2 text-ink-body">
             {greeting.message}
           </DialogDescription>
         </DialogHeader>
@@ -63,7 +63,9 @@ export function HolidayGreetingModal({ holiday }: HolidayGreetingModalProps) {
           <Button
             onClick={handleDismiss}
             style={accentColor ? { backgroundColor: accentColor } : undefined}
-            className="min-w-[120px]"
+            /* bg-none drops the navy gradient so the holiday accentColor,
+               applied as a background-color, is actually visible. */
+            className={`min-w-[120px] ${accentColor ? 'bg-none hover:brightness-110' : ''}`}
           >
             OK
           </Button>

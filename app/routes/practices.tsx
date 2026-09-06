@@ -119,7 +119,7 @@ export default function Practices() {
                     </Text>
                   </SlideUpOnScroll>
                   <SlideUpOnScroll delay={300}>
-                    <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button asChild size="lg">
                       <Link to="/contact">{t('practices.scheduleCta')}</Link>
                     </Button>
                   </SlideUpOnScroll>

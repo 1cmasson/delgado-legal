@@ -542,5 +542,47 @@
       }
     },
     "lastUpdated": "Última actualización: Febrero 2026"
+  },
+  "site": {
+    "cta": {
+      "nextStep": "Siguiente paso"
+    },
+    "cards": {
+      "michael": "Tarjeta digital de Michael",
+      "vanessa": "Tarjeta digital de Vanessa",
+      "firmLine": "Delgado Legal P.A. · Miami Lakes, FL",
+      "call": "Llamar",
+      "emailOffice": "Escribir a la oficina",
+      "directions": "Cómo llegar",
+      "suite": "6500 Cow Pen Rd, Suite 304",
+      "saveContact": "Guardar contacto",
+      "contactSaved": "Contacto guardado",
+      "shareCard": "Compartir tarjeta",
+      "sharing": "Compartiendo…",
+      "linkCopied": "Enlace copiado",
+      "copyFailed": "No se pudo copiar",
+      "about": "Acerca de",
+      "practiceFocus": "Áreas de práctica",
+      "fullBio": "Biografía completa",
+      "superLawyers": "Super Lawyers",
+      "hours": "Horario de oficina",
+      "openNow": "Abierto ahora",
+      "closedNow": "Cerrado ahora",
+      "weekdays": "Lunes a viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "byAppointment": "Con cita previa",
+      "closed": "Cerrado",
+      "hoursNote": "Horario en la hora local de Miami Lakes. Puede llamar o escribir en cualquier momento: los mensajes fuera de horario se responden el siguiente día hábil.",
+      "office": "Oficina",
+      "openInMaps": "Abrir en Maps",
+      "mapsTitle": "Mapa de la oficina de Delgado Legal P.A. en Miami Lakes",
+      "alsoAtFirm": "También en la firma",
+      "viewHerCard": "Ver su tarjeta",
+      "viewHisCard": "Ver su tarjeta",
+      "footerCard": "Delgado Legal P.A. — firma de abogados de servicio completo y agente de títulos autorizado en Miami Lakes, Florida.",
+      "fullWebsite": "Sitio completo",
+      "practiceAreas": "Áreas de práctica"
+    }
   }
 }
