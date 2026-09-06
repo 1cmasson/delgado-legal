@@ -30,6 +30,9 @@ export default function MichaelCard() {
         "home.practices.areas.realEstate.title",
         "home.practices.areas.estate.title",
       ]}
+      education="St. Thomas University School of Law"
+      graduationYear="2008"
+      experience="16+"
       bioAnchor="/attorneys#michael"
       linkedin="https://www.linkedin.com/in/michael-delgado-b9728927/"
       superLawyers="https://profiles.superlawyers.com/florida/hialeah/lawyer/michael-delgado/fc4bc44e-6b76-4b98-b79a-f6668d618255.html"

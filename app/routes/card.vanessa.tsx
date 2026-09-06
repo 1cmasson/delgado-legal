@@ -30,6 +30,9 @@ export default function VanessaCard() {
         "attorneys.vanessa.specializations.landlordTenant",
         "attorneys.vanessa.specializations.estatePlanning",
       ]}
+      education="Florida International University College of Law"
+      graduationYear="2008"
+      experience="16+"
       bioAnchor="/attorneys#vanessa"
       linkedin="https://www.linkedin.com/in/vanessa-delgado-a4b090a/"
       shareTitle="Vanessa Delgado — Delgado Legal P.A."

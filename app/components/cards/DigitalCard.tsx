@@ -49,6 +49,11 @@ export interface DigitalCardProps {
   bioKey: string;
   /** Translation keys for the specialization pills. */
   tagKeys: string[];
+  /** Law school and graduation year, mirroring app/routes/attorneys.tsx. */
+  education: string;
+  graduationYear: string;
+  /** Years of practice, e.g. "16+". */
+  experience: string;
   /** Anchor on /attorneys for the "Full bio" link. */
   bioAnchor: string;
   linkedin: string;
@@ -276,14 +281,32 @@ export function DigitalCard(props: DigitalCardProps) {
             {tf(t, "site.cards.about", "About")}
           </h2>
           <p className="text-base leading-[1.65] text-ink-body text-pretty">{t(props.bioKey)}</p>
-          <div className="flex flex-col gap-1 pt-1.5">
-            <span className="text-xs font-semibold uppercase tracking-[0.1em] text-steel">
-              {tf(t, "site.cards.practiceFocus", "Practice focus")}
-            </span>
-            <span className="text-[15px] text-ink-body">
-              {props.tagKeys.map((key) => t(key)).join(" · ")}
-            </span>
-          </div>
+          <dl className="grid gap-3.5 pt-1.5 sm:grid-cols-2">
+            <div className="flex flex-col gap-0.5">
+              <dt className="text-xs font-semibold uppercase tracking-[0.1em] text-steel">
+                {tf(t, "attorneys.labels.education", "Education")}
+              </dt>
+              <dd className="text-[15px] text-ink-body">
+                {props.education} ({props.graduationYear})
+              </dd>
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <dt className="text-xs font-semibold uppercase tracking-[0.1em] text-steel">
+                {tf(t, "attorneys.labels.experience", "Experience")}
+              </dt>
+              <dd className="text-[15px] text-ink-body">
+                {props.experience} {tf(t, "attorneys.labels.years", "Years")}
+              </dd>
+            </div>
+            <div className="flex flex-col gap-0.5 sm:col-span-2">
+              <dt className="text-xs font-semibold uppercase tracking-[0.1em] text-steel">
+                {tf(t, "site.cards.practiceFocus", "Practice focus")}
+              </dt>
+              <dd className="text-[15px] text-ink-body">
+                {props.tagKeys.map((key) => t(key)).join(" · ")}
+              </dd>
+            </div>
+          </dl>
           <div className="flex flex-wrap gap-2.5 pt-1">
             <a
               href={props.linkedin}

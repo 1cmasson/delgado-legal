@@ -440,7 +440,8 @@
     "loading": "Cargando...",
     "error": "Ocurrió un error",
     "skipToContent": "Saltar al contenido principal",
-    "openMenu": "Abrir menú"
+    "openMenu": "Abrir menú",
+    "menu": "Menú"
   },
   "footer": {
     "tagline": "Dedicados a proporcionar servicios legales excepcionales con integridad, compasión y compromiso con nuestros clientes.",

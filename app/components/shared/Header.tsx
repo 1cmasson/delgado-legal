@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { Spin as Hamburger } from 'hamburger-react';
-import { cn } from '~/lib/utils';
-import { Sheet, SheetContent } from '~/components/ui/sheet';
+import { cn, tf } from '~/lib/utils';
+import { Sheet, SheetContent, SheetTitle } from '~/components/ui/sheet';
 import { SheenRule } from '~/components/decorations';
 import { SiteLogo } from '~/components/shared/SiteLogo';
 import { Button } from '~/components/ui/button';
@@ -80,6 +80,8 @@ export function Header({ className }: HeaderProps) {
             onInteractOutside={(e) => e.preventDefault()}
             onPointerDownOutside={(e) => e.preventDefault()}
           >
+            {/* Radix requires a title on every dialog surface for screen readers. */}
+            <SheetTitle className="sr-only">{tf(t, 'common.menu', 'Menu')}</SheetTitle>
             <nav className="flex flex-col mt-20 px-4" aria-label="Mobile navigation">
               {navigation.map((item) => (
                 <Link

@@ -440,7 +440,8 @@
     "loading": "Loading...",
     "error": "An error occurred",
     "skipToContent": "Skip to main content",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "menu": "Menu"
   },
   "footer": {
     "tagline": "Dedicated to providing exceptional legal services with integrity, compassion, and commitment to our clients.",
